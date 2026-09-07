@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <title>YSN Works — Digital Creative Agency</title>
+    <link rel="icon" type="image/x-icon" href="Favicon.jpg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="Favicon.jpg" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Syne:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- ═══ BACKGROUND ═══ -->
+    <div class="bg-canvas">
+        <canvas id="gridCanvas"></canvas>
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+    <div class="theme-overlay" id="themeOverlay"></div>
+
+    <!-- ═══ NAVBAR ═══ -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-inner">
+            <a class="logo" href="#">
+                <div class="logo-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                <span class="logo-text">YSN Works</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#hero"><span class="nav-label">Home</span></a></li>
+                <li><a href="#about"><span class="nav-label">About</span></a></li>
+                <li><a href="#services"><span class="nav-label">Services</span></a></li>
+                <li><a href="#work"><span class="nav-label">Work</span></a></li>
+                <li><a href="products.html"><span class="nav-label">Products</span></a></li>
+                <li><a href="#contact"><span class="nav-label">Contact</span></a></li>
+            </ul>
+            <div class="nav-right">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle Theme">
+                    <div class="toggle-icons">
+                        <span class="toggle-icon-sun">☀️</span>
+                        <span class="toggle-icon-moon">🌙</span>
+                    </div>
+                    <div class="toggle-thumb"></div>
+                </button>
+                <a href="#contact" class="btn-glass btn-primary">
+                    <i class="fa-solid fa-paper-plane btn-icon"></i>
+                    <span class="btn-text">Get Started</span>
+                </a>
+                <button class="hamburger" id="hamburger">
+                    <span class="ham-line"></span>
+                    <span class="ham-line"></span>
+                    <span class="ham-line"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-inner">
+            <a href="#hero" class="mobile-link"><span class="m-icon"><i
+                        class="fa-solid fa-house"></i></span><span>Home</span></a>
+            <a href="#about" class="mobile-link"><span class="m-icon"><i
+                        class="fa-solid fa-user"></i></span><span>About</span></a>
+            <a href="#services" class="mobile-link"><span class="m-icon"><i
+                        class="fa-solid fa-sparkles"></i></span><span>Services</span></a>
+            <a href="#work" class="mobile-link"><span class="m-icon"><i
+                        class="fa-solid fa-layer-group"></i></span><span>Work</span></a>
+            <a href="products.html" class="mobile-link">
+                <span class="m-icon"><i class="fa-solid fa-box-open"></i></span>
+                <span>Products</span>
+            </a>
+            <a href="#contact" class="mobile-link"><span class="m-icon"><i
+                        class="fa-solid fa-envelope"></i></span><span>Contact</span></a>
+            <div class="mobile-divider"></div>
+            <a href="#contact" class="btn-glass btn-primary" style="justify-content:center;">
+                <i class="fa-solid fa-paper-plane btn-icon"></i>
+                <span class="btn-text">Get Started</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════
+     HERO SECTION
+════════════════════════════════════════ -->
+    <section class="hero" id="hero">
+        <div class="hero-inner">
+
+            <div class="hero-badge reveal">
+                <span class="badge-dot"></span>
+                <span>Available for new projects</span>
+            </div>
+
+            <h1 class="hero-title reveal">
+                <span class="line">Crafting Digital</span>
+                <span class="line accent-text">Experiences</span>
+                <span class="line">That <em>Inspire</em></span>
+            </h1>
+
+            <p class="hero-sub reveal">
+                We transform bold ideas into stunning digital realities — brands, websites,
+                and experiences that make people stop scrolling.
+            </p>
+
+            <div class="hero-actions reveal">
+                <a href="#work" class="btn-glass btn-primary btn-lg">
+                    <i class="fa-solid fa-rocket btn-icon"></i>
+                    <span class="btn-text">View Our Work</span>
+                </a>
+                <a href="#contact" class="btn-glass btn-lg">
+                    <i class="fa-solid fa-envelope btn-icon"></i>
+                    <span class="btn-text">Contact Us</span>
+                </a>
+            </div>
+
+            <!-- Stats row — no team members -->
+            <div class="hero-stats reveal">
+                <div class="stat-item">
+                    <span class="stat-num" data-count="150">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Projects Done</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-num" data-count="98">0</span><span class="stat-suffix">%</span>
+                    <span class="stat-label">Client Satisfaction</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-num" data-count="6">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+            </div>
+
+            <!-- Hero visual — floating glass cards (no team members) -->
+            <div class="hero-visual reveal">
+                <div class="glass-card-wrap">
+                    <div class="float-card card-main">
+                        <div class="card-glow"></div>
+                        <div class="card-icon-wrap blue-icon">
+                            <i class="fa-solid fa-pen-nib"></i>
+                        </div>
+                        <div class="card-info">
+                            <span class="card-title">Brand Identity</span>
+                            <span class="card-sub">Designing...</span>
+                        </div>
+                        <div class="card-progress">
+                            <div class="progress-bar" style="--w:75%"></div>
+                        </div>
+                    </div>
+
+                    <div class="float-card card-sec">
+                        <div class="card-glow green"></div>
+                        <div class="card-icon-wrap green-icon">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                        <div class="card-info">
+                            <span class="card-title">Web Dev</span>
+                            <span class="card-sub">In Progress</span>
+                        </div>
+                    </div>
+
+                    <div class="float-card card-small">
+                        <i class="fa-solid fa-star" style="color:#1565ff"></i>
+                        <span>4.9 Rating</span>
+                    </div>
+
+                    <div class="float-card card-small card-small-2">
+                        <i class="fa-solid fa-bolt" style="color:#22c55e"></i>
+                        <span>Fast Delivery</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- ═══ MARQUEE ═══ -->
+    <section class="marquee-section">
+        <div class="marquee-label">Trusted by leading brands</div>
+        <div class="marquee-track">
+            <div class="marquee-inner">
+                <span class="marquee-item"><i class="fa-brands fa-google"></i> Google</span>
+                <span class="marquee-item"><i class="fa-brands fa-apple"></i> Apple</span>
+                <span class="marquee-item"><i class="fa-brands fa-microsoft"></i> Microsoft</span>
+                <span class="marquee-item"><i class="fa-brands fa-amazon"></i> Amazon</span>
+                <span class="marquee-item"><i class="fa-brands fa-meta"></i> Meta</span>
+                <span class="marquee-item"><i class="fa-brands fa-spotify"></i> Spotify</span>
+                <span class="marquee-item"><i class="fa-brands fa-slack"></i> Slack</span>
+                <span class="marquee-item"><i class="fa-brands fa-figma"></i> Figma</span>
+                <span class="marquee-item"><i class="fa-brands fa-google"></i> Google</span>
+                <span class="marquee-item"><i class="fa-brands fa-apple"></i> Apple</span>
+                <span class="marquee-item"><i class="fa-brands fa-microsoft"></i> Microsoft</span>
+                <span class="marquee-item"><i class="fa-brands fa-amazon"></i> Amazon</span>
+                <span class="marquee-item"><i class="fa-brands fa-meta"></i> Meta</span>
+                <span class="marquee-item"><i class="fa-brands fa-spotify"></i> Spotify</span>
+                <span class="marquee-item"><i class="fa-brands fa-slack"></i> Slack</span>
+                <span class="marquee-item"><i class="fa-brands fa-figma"></i> Figma</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ ABOUT ═══ -->
+    <section class="about-section section" id="about">
+        <div class="container">
+            <div class="section-tag reveal">About  YSN Works</div>
+            <div class="about-grid">
+                <div class="about-left reveal">
+                    <h2 class="section-title">
+                        We don't just design.<br />
+                        We <em>engineer</em> digital presence.
+                    </h2>
+                    <p class="about-text">
+                        YSN Works is a full-spectrum creative agency built for brands that demand excellence.
+                        We blend strategy, design, and technology to craft experiences that resonate, convert, and
+                        endure.
+                    </p>
+                    <p class="about-text">
+                        Every pixel is intentional. Every interaction is crafted. Every project is a partnership.
+                    </p>
+                    <a href="#services" class="btn-glass btn-primary" style="margin-top:32px;display:inline-flex;">
+                        <i class="fa-solid fa-arrow-right btn-icon"></i>
+                        <span class="btn-text">Our Services</span>
+                    </a>
+                </div>
+                <div class="about-right reveal">
+                    <div class="vision-diagram">
+                        <div class="vision-center">
+                            <div class="vision-glow"></div>
+                            <span class="vision-center-text">Your<br />Brand</span>
+                        </div>
+                        <div class="vision-node node-top"><i class="fa-solid fa-palette"></i> Visuals</div>
+                        <div class="vision-node node-left"><i class="fa-solid fa-microphone"></i> Tone</div>
+                        <div class="vision-node node-right"><i class="fa-solid fa-tag"></i> Offers</div>
+                        <div class="vision-node node-bottom"><i class="fa-solid fa-pen-nib"></i> Content</div>
+                        <div class="vision-arrow arr-top"></div>
+                        <div class="vision-arrow arr-left"></div>
+                        <div class="vision-arrow arr-right"></div>
+                        <div class="vision-arrow arr-bottom"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ SERVICES ═══ -->
+    <section class="services-section section" id="services">
+        <div class="container">
+            <div class="section-tag reveal">What We Do</div>
+            <div class="services-head reveal">
+                <div>
+                    <h2 class="section-title">Services that are<br /><em>tailored for you</em></h2>
+                </div>
+                <a href="#work" class="btn-glass">
+                    <i class="fa-solid fa-arrow-up-right-from-square btn-icon"></i>
+                    <span class="btn-text">View Projects</span>
+                </a>
+            </div>
+            <div class="services-grid">
+                <div class="service-card reveal" data-num="01">
+                    <div class="service-num">01</div>
+                    <div class="service-icon-wrap"><i class="fa-solid fa-layer-group"></i></div>
+                    <h3 class="service-title">Brand Strategy</h3>
+                    <p class="service-desc">Building cohesive brand identities that communicate your vision and connect
+                        with your audience.</p>
+                    <div class="service-tags">
+                        <span class="tag">Brand Guidelines</span>
+                        <span class="tag">Logo Design</span>
+                        <span class="tag">Identity</span>
+                    </div>
+                    <div class="service-footer"><a href="#contact" class="service-btn"><i
+                                class="fa-solid fa-plus"></i></a></div>
+                    <div class="service-card-glow"></div>
+                </div>
+                <div class="service-card reveal" data-num="02">
+                    <div class="service-num">02</div>
+                    <div class="service-icon-wrap"><i class="fa-solid fa-code"></i></div>
+                    <h3 class="service-title">Web Design & Dev</h3>
+                    <p class="service-desc">Pixel-perfect, high-performance websites and web applications built for
+                        speed and scale.</p>
+                    <div class="service-tags">
+                        <span class="tag">Custom Website</span>
+                        <span class="tag">Responsive</span>
+                        <span class="tag">CMS</span>
+                    </div>
+                    <div class="service-footer"><a href="#contact" class="service-btn"><i
+                                class="fa-solid fa-plus"></i></a></div>
+                    <div class="service-card-glow"></div>
+                </div>
+                <div class="service-card reveal" data-num="03">
+                    <div class="service-num">03</div>
+                    <div class="service-icon-wrap"><i class="fa-solid fa-chart-line"></i></div>
+                    <h3 class="service-title">Digital Marketing</h3>
+                    <p class="service-desc">Data-driven campaigns that amplify your reach, drive conversions, and grow
+                        revenue.</p>
+                    <div class="service-tags">
+                        <span class="tag">SEO</span>
+                        <span class="tag">PPC</span>
+                        <span class="tag">Social Media</span>
+                    </div>
+                    <div class="service-footer"><a href="#contact" class="service-btn"><i
+                                class="fa-solid fa-plus"></i></a></div>
+                    <div class="service-card-glow"></div>
+                </div>
+                <div class="service-card reveal" data-num="04">
+                    <div class="service-num">04</div>
+                    <div class="service-icon-wrap"><i class="fa-solid fa-mobile-screen"></i></div>
+                    <h3 class="service-title">UI/UX Design</h3>
+                    <p class="service-desc">Human-centered interface design that delights users and drives measurable
+                        engagement.</p>
+                    <div class="service-tags">
+                        <span class="tag">Wireframing</span>
+                        <span class="tag">Prototyping</span>
+                        <span class="tag">Testing</span>
+                    </div>
+                    <div class="service-footer"><a href="#contact" class="service-btn"><i
+                                class="fa-solid fa-plus"></i></a></div>
+                    <div class="service-card-glow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ WORK / PORTFOLIO ═══ -->
+    <section class="work-section section" id="work">
+        <div class="container">
+            <div class="section-tag reveal">Portfolio</div>
+            <h2 class="section-title reveal">Selected <em>Work</em></h2>
+            <p class="section-sub reveal">A curated collection of projects that showcase design thinking and technical
+                craft.</p>
+
+            <div class="work-grid">
+
+                <!-- Card 1: Hamza Dental Centre -->
+                <div class="work-card reveal work-card-featured">
+                    <div class="work-card-glow"></div>
+                    <div class="work-img-wrap">
+                        <img src="https://hamzadentalcentre.com/wp-content/uploads/2024/01/logo.png"
+                            alt="Hamza Dental Centre" class="work-img"
+                            onerror="this.style.display='none'; this.parentElement.querySelector('.work-img-placeholder').style.display='flex'" />
+                        <div class="work-img-placeholder">
+                            <i class="fa-solid fa-globe"></i>
+                            <span>Hamza Dental Centre</span>
+                        </div>
+                        <div class="work-overlay-tag">Web Design</div>
+                    </div>
+                    <div class="work-card-info">
+                        <h3 class="work-title">Hamza Dental Centre</h3>
+                        <p class="work-desc">Premium dental care in Lahore featuring advanced microscope-assisted root
+                            canal treatments and state-of-the-art endodontic technology.</p>
+                        <a href="https://hamzadentalcentre.com/" target="_blank" rel="noopener noreferrer"
+                            class="btn-glass work-link-btn">
+                            <i class="fa-solid fa-arrow-up-right-from-square btn-icon"></i>
+                            <span class="btn-text">View Project</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 2: MySmallRecipes -->
+                <div class="work-card reveal">
+                    <div class="work-card-glow"></div>
+                    <div class="work-img-wrap">
+                        <img src="https://mysmallrecipes.com/wp-content/uploads/2023/01/mysmallrecipes-logo.png"
+                            alt="MySmallRecipes" class="work-img"
+                            onerror="this.style.display='none'; this.parentElement.querySelector('.work-img-placeholder').style.display='flex'" />
+                        <div class="work-img-placeholder">
+                            <i class="fa-solid fa-utensils"></i>
+                            <span>MySmallRecipes</span>
+                        </div>
+                        <div class="work-overlay-tag">Blog</div>
+                    </div>
+                    <div class="work-card-info">
+                        <h3 class="work-title">MySmallRecipes</h3>
+                        <p class="work-desc">A food blog featuring easy-to-follow recipes, cooking guides, and culinary
+                            inspiration for home chefs.</p>
+                        <a href="https://mysmallrecipes.com/" target="_blank" rel="noopener noreferrer"
+                            class="btn-glass work-link-btn">
+                            <i class="fa-solid fa-arrow-up-right-from-square btn-icon"></i>
+                            <span class="btn-text">View Project</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 3: FurnitureHub -->
+                <div class="work-card reveal">
+                    <div class="work-card-glow"></div>
+                    <div class="work-img-wrap">
+                        <img src="https://furniturehub.pk/wp-content/uploads/2022/09/fh-logo.png" alt="FurnitureHub"
+                            class="work-img"
+                            onerror="this.style.display='none'; this.parentElement.querySelector('.work-img-placeholder').style.display='flex'" />
+                        <div class="work-img-placeholder">
+                            <i class="fa-solid fa-couch"></i>
+                            <span>FurnitureHub</span>
+                        </div>
+                        <div class="work-overlay-tag">E-Commerce</div>
+                    </div>
+                    <div class="work-card-info">
+                        <h3 class="work-title">FurnitureHub</h3>
+                        <p class="work-desc">Premium online furniture store with elegant product showcases, category
+                            browsing, and seamless shopping experience.</p>
+                        <a href="https://furniturehub.pk/" target="_blank" rel="noopener noreferrer"
+                            class="btn-glass work-link-btn">
+                            <i class="fa-solid fa-arrow-up-right-from-square btn-icon"></i>
+                            <span class="btn-text">View Project</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Card 4: ScentYou -->
+                <div class="work-card reveal">
+                    <div class="work-card-glow"></div>
+                    <div class="work-img-wrap">
+                        <img src="https://scentyou.pk/cdn/shop/files/ScentYou_Logo_Final.png" alt="ScentYou"
+                            class="work-img"
+                            onerror="this.style.display='none'; this.parentElement.querySelector('.work-img-placeholder').style.display='flex'" />
+                        <div class="work-img-placeholder">
+                            <i class="fa-solid fa-spray-can-sparkles"></i>
+                            <span>ScentYou</span>
+                        </div>
+                        <div class="work-overlay-tag">E-Commerce</div>
+                    </div>
+                    <div class="work-card-info">
+                        <h3 class="work-title">ScentYou</h3>
+                        <p class="work-desc">Luxury perfume e-commerce platform with bundle offers, authentic
+                            fragrances, and a modern shopping experience.</p>
+                        <a href="https://scentyou.pk/" target="_blank" rel="noopener noreferrer"
+                            class="btn-glass work-link-btn">
+                            <i class="fa-solid fa-arrow-up-right-from-square btn-icon"></i>
+                            <span class="btn-text">View Project</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ DIGITAL PRODUCTS SECTION ═══ -->
+    <section class="products-section section" id="products">
+        <div class="container">
+            <div class="section-tag reveal">Digital Products</div>
+            <div class="products-head reveal">
+                <div>
+                    <h2 class="section-title">Our Digital <em>Products</em></h2>
+                    <p class="section-sub">Premium digital resources crafted to help you grow faster.</p>
+                </div>
+                <a href="products.html" class="btn-glass">
+                    <i class="fa-solid fa-arrow-up-right-from-square btn-icon"></i>
+                    <span class="btn-text">View All Products</span>
+                </a>
+            </div>
+
+            <div class="products-grid">
+
+                <!-- Product Card 1 -->
+                <a href="products.html" class="product-card reveal">
+                    <div class="product-card-glow"></div>
+                    <div class="product-img-wrap">
+                        <div class="product-img-placeholder">
+                            <i class="fa-solid fa-palette"></i>
+                        </div>
+                        <div class="product-badge">UI Kit</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Brand Identity Kit</h3>
+                        <p class="product-desc">Complete brand identity package with logo templates, color palettes, and
+                            guidelines.</p>
+                        <div class="product-footer">
+                            <span class="product-price">Coming Soon</span>
+                            <span class="product-btn">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Product Card 2 -->
+                <a href="products.html" class="product-card reveal">
+                    <div class="product-card-glow"></div>
+                    <div class="product-img-wrap">
+                        <div class="product-img-placeholder">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                        <div class="product-badge">Template</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Website Templates</h3>
+                        <p class="product-desc">Premium, responsive website templates built for modern businesses and
+                            agencies.</p>
+                        <div class="product-footer">
+                            <span class="product-price">Coming Soon</span>
+                            <span class="product-btn">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Product Card 3 -->
+                <a href="products.html" class="product-card reveal">
+                    <div class="product-card-glow"></div>
+                    <div class="product-img-wrap">
+                        <div class="product-img-placeholder">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <div class="product-badge">Guide</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">SEO Starter Pack</h3>
+                        <p class="product-desc">A complete guide and checklist to rank higher on Google and drive
+                            organic traffic.</p>
+                        <div class="product-footer">
+                            <span class="product-price">Coming Soon</span>
+                            <span class="product-btn">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Product Card 4 -->
+                <a href="products.html" class="product-card reveal">
+                    <div class="product-card-glow"></div>
+                    <div class="product-img-wrap">
+                        <div class="product-img-placeholder">
+                            <i class="fa-solid fa-mobile-screen"></i>
+                        </div>
+                        <div class="product-badge">UI Kit</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Mobile UI Components</h3>
+                        <p class="product-desc">100+ ready-to-use mobile UI components for Figma and React Native
+                            projects.</p>
+                        <div class="product-footer">
+                            <span class="product-price">Coming Soon</span>
+                            <span class="product-btn">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </span>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+
+            <!-- View All Banner -->
+            <div class="products-cta reveal">
+                <div class="products-cta-glow"></div>
+                <div class="products-cta-left">
+                    <i class="fa-solid fa-box-open products-cta-icon"></i>
+                    <div>
+                        <h3>More products coming soon</h3>
+                        <p>Visit the products page to stay updated on new releases.</p>
+                    </div>
+                </div>
+                <a href="products.html" class="btn-glass btn-primary">
+                    <i class="fa-solid fa-arrow-right btn-icon"></i>
+                    <span class="btn-text">Visit Products Page</span>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ═══ TESTIMONIALS ═══ -->
+    <section class="testimonials-section section">
+        <div class="container">
+            <div class="section-tag reveal">Testimonials</div>
+            <h2 class="section-title reveal">What People Say<br /><em>About Us</em></h2>
+            <div class="testimonials-grid">
+                <div class="testi-card reveal">
+                    <div class="testi-stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="testi-text">"YSN Works completely transformed our brand. The attention to detail is
+                        unmatched — every design decision felt intentional and brilliant."</p>
+                    <div class="testi-author">
+                        <div class="testi-avatar">AK</div>
+                        <div>
+                            <div class="testi-name">Ahmed Khan</div>
+                            <div class="testi-role">CEO, TechFlow</div>
+                        </div>
+                    </div>
+                    <div class="testi-glow"></div>
+                </div>
+                <div class="testi-card reveal">
+                    <div class="testi-stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="testi-text">"Working with YSN Works was a game-changer. Our website traffic increased
+                        300% within three months of launch. Absolutely exceptional work."</p>
+                    <div class="testi-author">
+                        <div class="testi-avatar">SR</div>
+                        <div>
+                            <div class="testi-name">Sarah Rahman</div>
+                            <div class="testi-role">Founder, BrandLab</div>
+                        </div>
+                    </div>
+                    <div class="testi-glow"></div>
+                </div>
+                <div class="testi-card reveal">
+                    <div class="testi-stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <p class="testi-text">"Fast, professional, and creative beyond expectation. The team understood our
+                        vision perfectly and delivered something truly world-class."</p>
+                    <div class="testi-author">
+                        <div class="testi-avatar">MJ</div>
+                        <div>
+                            <div class="testi-name">Marco Jensen</div>
+                            <div class="testi-role">Director, NexGen</div>
+                        </div>
+                    </div>
+                    <div class="testi-glow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ FAQ ═══ -->
+    <section class="faq-section section">
+        <div class="container">
+            <div class="section-tag reveal">FAQ</div>
+            <h2 class="section-title reveal">Your Questions<br /><em>Answered</em></h2>
+            <div class="faq-wrap">
+                <div class="faq-item reveal">
+                    <button class="faq-q"><span>What services does YSN Works offer?</span><i
+                            class="fa-solid fa-plus faq-icon"></i></button>
+                    <div class="faq-a">
+                        <p>We offer brand strategy, web design & development, digital marketing, UI/UX design, and
+                            ongoing support. Every service is tailored to your specific goals.</p>
+                    </div>
+                </div>
+                <div class="faq-item reveal">
+                    <button class="faq-q"><span>How long does a typical project take?</span><i
+                            class="fa-solid fa-plus faq-icon"></i></button>
+                    <div class="faq-a">
+                        <p>Timelines vary by scope. A brand identity takes 2–3 weeks, a full website 4–8 weeks, and
+                            complex web applications can take 3–6 months.</p>
+                    </div>
+                </div>
+                <div class="faq-item reveal">
+                    <button class="faq-q"><span>Do you offer post-launch support?</span><i
+                            class="fa-solid fa-plus faq-icon"></i></button>
+                    <div class="faq-a">
+                        <p>Absolutely. All projects include 30 days of post-launch support. We also offer ongoing
+                            maintenance and growth retainers for clients who want continued partnership.</p>
+                    </div>
+                </div>
+                <div class="faq-item reveal">
+                    <button class="faq-q"><span>What is your pricing structure?</span><i
+                            class="fa-solid fa-plus faq-icon"></i></button>
+                    <div class="faq-a">
+                        <p>We offer fixed-price packages for defined scopes and custom quotes for complex projects.
+                            Contact us for a personalized estimate.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ CTA ═══ -->
+    <section class="cta-section section">
+        <div class="container">
+            <div class="cta-wrap reveal">
+                <div class="cta-glow"></div>
+                <div class="cta-icon"><i class="fa-solid fa-rocket"></i></div>
+                <div class="cta-content">
+                    <span class="cta-eyebrow">Ready to get started?</span>
+                    <h2 class="cta-title">Let's Build Something<br /><em>Amazing</em> Together</h2>
+                    <p class="cta-sub">Have a project in mind? Let's bring your ideas to life.</p>
+                </div>
+                <div class="cta-actions">
+                    <a href="#contact" class="btn-glass btn-primary btn-lg">
+                        <i class="fa-solid fa-paper-plane btn-icon"></i>
+                        <span class="btn-text">Contact Us</span>
+                    </a>
+                    <a href="https://wa.me/message/6MF5FBRHGIPXM1" target="_blank" class="btn-glass btn-lg">
+                        <i class="fa-brands fa-whatsapp btn-icon"></i>
+                        <span class="btn-text">WhatsApp</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ CONTACT ═══ -->
+    <section class="contact-section section" id="contact">
+        <div class="container">
+            <div class="section-tag reveal">Get In Touch</div>
+            <div class="contact-grid">
+
+                <div class="contact-left reveal">
+                    <h2 class="section-title">Start Your<br /><em>Project Today</em></h2>
+                    <p class="contact-desc">Tell us about your project and we'll get back to you within 24 hours with a
+                        custom proposal.</p>
+                    <div class="contact-info">
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div>
+                                <span class="info-label">Email</span>
+                                <span class="info-val">111.limitra.pk@gmail.com</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                            <div>
+                                <span class="info-label">WhatsApp</span>
+                                <a href="https://wa.me/message/6MF5FBRHGIPXM1" target="_blank"
+                                    class="info-val info-link">Chat on WhatsApp</a>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div>
+                                <span class="info-label">Location</span>
+                                <span class="info-val">Pakistan</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-right reveal">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-glow"></div>
+                        <!-- Web3Forms hidden fields -->
+                        <input type="hidden" name="access_key" value="0bcc087d-f784-4e6f-9158-85c6de7309cc" />
+                        <input type="hidden" name="subject" value="New Contact from Yara Studio Website" />
+                        <input type="hidden" name="from_name" value="Yara Studio Contact Form" />
+                        <input type="checkbox" name="botcheck" style="display:none" />
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Full Name</label>
+                                <input type="text" name="name" placeholder="John Doe" required />
+                            </div>
+                            <div class="form-group">
+                                <label>Email Address</label>
+                                <input type="email" name="email" placeholder="john@example.com" required />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Service Needed</label>
+                            <select name="service">
+                                <option>Brand Strategy</option>
+                                <option>Web Design & Dev</option>
+                                <option>Digital Marketing</option>
+                                <option>UI/UX Design</option>
+                                <option>Full Package</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Project Details</label>
+                            <textarea name="message" placeholder="Tell us about your project..." rows="5"
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn-glass btn-primary" style="width:100%;justify-content:center;"
+                            id="submitBtn">
+                            <i class="fa-solid fa-paper-plane btn-icon" id="submitIcon"></i>
+                            <span class="btn-text" id="submitText">Send Message</span>
+                        </button>
+                        <div class="form-success" id="formSuccess">
+                            <i class="fa-solid fa-circle-check"></i> Message sent! We'll reply within 24 hours.
+                        </div>
+                        <div class="form-error" id="formError">
+                            <i class="fa-solid fa-circle-exclamation"></i> Something went wrong. Please try again.
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ FOOTER ═══ -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="footer-left">
+                <a href="#" class="footer-logo">
+                    <div class="footer-logo-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                    <span class="footer-brand">YSN Works</span>
+                </a>
+                <span class="footer-copy">© 2026. All rights reserved.</span>
+            </div>
+            <div class="footer-center">
+                <a href="#" class="footer-link"><span>Privacy</span></a>
+                <a href="#" class="footer-link"><span>Terms</span></a>
+                <a href="#" class="footer-link"><span>Support</span></a>
+            </div>
+            <!-- Footer Social: Upwork, LinkedIn, Instagram, TikTok, WhatsApp -->
+            <div class="footer-right"> 
+                <a href="www.linkedin.com/in/yaseen-malik-62b776434" target="_blank" class="social-btn" data-tooltip="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="https://www.instagram.com/ysn_works?stkn=MWVxb2JjMWIzc3h3dQ%3D%3D&utm_source=qr" target="_blank" class="social-btn" data-tooltip="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.tiktok.com/@ysn_works?_r=1&_t=ZN-99WgQX2zUKk" target="_blank" class="social-btn" data-tooltip="TikTok">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+                <a href="https://wa.me/message/6MF5FBRHGIPXM1" target="_blank" class="social-btn"
+                    data-tooltip="WhatsApp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
