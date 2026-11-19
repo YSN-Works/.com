@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 — Page Not Found | YSN Works</title>
+  <meta name="description" content="The requested page could not be located on YSN Works.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="../assets/images/logo.png">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <link rel="stylesheet" href="../css/404.css">
+
+  <!-- CDNs -->
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+  <!-- SVG Liquid Page Transition Layer -->
+  <div class="page-transition-curtain" aria-hidden="true">
+    <svg viewBox="0 0 100 100" preserveAspectRatio="none">
+      <path id="transitionPath" d="M 0 100 V 100 Q 50 100 100 100 V 100 Z" />
+    </svg>
+  </div>
+
+  <div class="cursor-dot"></div>
+  <div class="cursor-follower"></div>
+
+  <!-- Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-wrapper">
+      <nav class="nav-inner">
+        <a href="../index.html" class="nav-brand magnetic-wrap">
+          <img src="../assets/images/logo.png" alt="YSN Works Logo" class="nav-brand-logo">
+          <span class="nav-brand-text">YSN <span>WORKS</span></span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="../index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="products.html" class="nav-link">Products</a></li>
+          <li><a href="faq.html" class="nav-link">FAQ</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="theme-toggle magnetic-wrap" aria-label="Toggle Theme"></button>
+          <a href="contact.html" class="btn btn-sm btn-primary magnetic-wrap">Start Project</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="error-hero">
+      <div class="ambient-crimson-glow" style="top: 25%; left: 35%; width: 450px; height: 450px;"></div>
+
+      <div class="container" style="position: relative; z-index: 5;">
+        <div class="error-num tilt-3d" data-parallax-speed="0.1">404</div>
+        <h1 class="error-title kinetic-title">Page Not Located.</h1>
+        <p class="error-desc">
+          The coordinate or file path you requested does not exist. Let's redirect you back to the main website.
+        </p>
+
+        <div class="error-actions">
+          <a href="../index.html" class="btn btn-lg btn-primary magnetic-wrap">
+            <span>Return to Home</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="portfolio.html" class="btn btn-lg btn-secondary magnetic-wrap">
+            <span>Browse Portfolio</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© 2026 YSN Works. All rights reserved.</p>
+        <div class="footer-socials">
+          <a href="../index.html" class="footer-link">Home</a>
+          <a href="about.html" class="footer-link">About</a>
+          <a href="portfolio.html" class="footer-link">Portfolio</a>
+          <a href="contact.html" class="footer-link">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/animations.js"></script>
+</body>
+</html>

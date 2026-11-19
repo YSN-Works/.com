@@ -1,0 +1,444 @@
+/* ==========================================================================
+   YSN WORKS — RESPONSIVE ENGINE (responsive.css)
+   Strict testing: 320px, 360px, 375px, 390px, 414px, 768px, 1024px, 1366px, 1440px, 1920px
+   No horizontal overflow, no clipping, proper touch targets.
+   ========================================================================== */
+
+/* Universal Overflow Protection */
+body, html {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* --- Tablets & Laptops (1024px - 1279px) --- */
+@media (max-width: 1279px) {
+  .footer-top {
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: 2rem;
+  }
+}
+
+/* --- Tablets & Small Screens (768px to 1023px) --- */
+@media (max-width: 1023px) {
+  /* Disable custom cursor on touch screens */
+  .cursor-dot, .cursor-follower {
+    display: none !important;
+  }
+  
+  body {
+    cursor: auto !important;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .mobile-toggle {
+    display: flex;
+  }
+
+  .section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2.5rem;
+  }
+
+  .footer-brand-info {
+    grid-column: span 2;
+  }
+
+  /* Two Column Hero tablet adaptation */
+  .hero-grid-layout {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 2rem !important;
+  }
+
+  .hero-portrait-frame {
+    max-height: 480px !important;
+  }
+}
+
+/* --- Mobile Viewports (max-width: 767px) --- */
+@media (max-width: 767px) {
+  :root {
+    --container-px: 1.25rem;
+  }
+
+  .section {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .section-subtitle {
+    font-size: 0.95rem;
+  }
+
+  /* ---- NAVBAR: logo + text horizontal, theme icon centered ---- */
+  .navbar {
+    top: 0.75rem;
+  }
+
+  .nav-inner {
+    padding: 0.45rem 0.9rem;
+  }
+
+  .nav-brand {
+    display: inline-flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    gap: 0.5rem !important;
+    white-space: nowrap !important;
+    flex-shrink: 0 !important;
+  }
+
+  .nav-brand-logo {
+    width: 28px !important;
+    height: 28px !important;
+    min-width: 28px !important;
+    display: block !important;
+    flex-shrink: 0 !important;
+  }
+
+  .nav-brand-text {
+    font-size: 0.95rem !important;
+    white-space: nowrap !important;
+    display: inline !important;
+    line-height: 1 !important;
+  }
+
+  .theme-toggle {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 32px !important;
+    height: 32px !important;
+    min-width: 32px !important;
+    padding: 0 !important;
+    line-height: 0 !important;
+    flex-shrink: 0 !important;
+  }
+
+  .theme-toggle svg {
+    width: 15px !important;
+    height: 15px !important;
+    display: block !important;
+  }
+
+  .nav-actions {
+    gap: 0.5rem !important;
+    align-items: center !important;
+  }
+
+  /* ---- BUTTONS: text + icon always in one row ---- */
+  .btn {
+    display: inline-flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: center !important;
+    white-space: nowrap !important;
+    flex-wrap: nowrap !important;
+    gap: 0.45rem !important;
+    padding: 0.75rem 1.3rem !important;
+  }
+
+  .btn svg,
+  .btn i {
+    display: inline-block !important;
+    flex-shrink: 0 !important;
+    margin: 0 !important;
+    vertical-align: middle !important;
+  }
+
+  .btn-lg {
+    padding: 0.85rem 1.5rem !important;
+    font-size: 0.95rem !important;
+  }
+
+  .btn-sm {
+    padding: 0.45rem 0.9rem !important;
+    font-size: 0.8rem !important;
+  }
+
+  /* TWO-COLUMN HERO ON MOBILE: Text first, portrait below! */
+  .hero-grid-layout {
+    grid-template-columns: 1fr !important;
+    gap: 2.5rem !important;
+    text-align: left;
+  }
+
+  .hero-title {
+    font-size: clamp(2.1rem, 7.5vw, 2.8rem) !important;
+    line-height: 1.12 !important;
+  }
+
+  .hero-subtitle {
+    font-size: 0.98rem !important;
+  }
+
+  .hero-cta-group {
+    flex-direction: row;
+    align-items: center !important;
+    flex-wrap: wrap;
+    gap: 0.75rem !important;
+  }
+
+  .hero-cta-group .btn {
+    flex: 1 1 auto;
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .hero-portrait-container {
+    justify-content: center !important;
+    margin-top: 1rem;
+  }
+
+  .hero-portrait-frame {
+    max-height: 400px !important;
+    max-width: 320px !important;
+    width: 100% !important;
+  }
+
+  /* ---- PINNED STORYTELLING: fully static vertical layout on mobile ---- */
+  .pinned-story-section,
+  .story-section {
+    overflow: visible !important;
+  }
+
+  .story-pin-container {
+    min-height: auto !important;
+    display: block !important;
+    align-items: unset !important;
+  }
+
+  .story-grid {
+    grid-template-columns: 1fr !important;
+    gap: 0 !important;
+    display: block !important;
+  }
+
+  .story-steps-col {
+    min-height: auto !important;
+    position: static !important;
+    display: block !important;
+    width: 100% !important;
+    overflow: visible !important;
+  }
+
+  /* CRITICAL: All story steps must be static, visible, stacked vertically */
+  .story-step {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    transform: none !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+    display: block !important;
+    width: 100% !important;
+    margin-bottom: 2.5rem !important;
+  }
+
+  .story-step:last-child {
+    margin-bottom: 0 !important;
+  }
+
+  .story-step h3 {
+    font-size: 1.6rem !important;
+  }
+
+  .story-visual-col {
+    display: none !important; /* Clean reading on mobile */
+  }
+
+  /* ---- HORIZONTAL GALLERY: stacked card layout on mobile ---- */
+  .horizontal-gallery-section {
+    overflow: visible !important;
+  }
+
+  .horizontal-gallery-wrapper {
+    height: auto !important;
+    overflow: visible !important;
+  }
+
+  .horizontal-gallery-track {
+    display: flex !important;
+    flex-direction: column !important;
+    transform: none !important;
+    width: 100% !important;
+    gap: 1.25rem !important;
+    will-change: auto !important;
+  }
+
+  .horizontal-gallery-panel {
+    min-width: 100% !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: auto !important;
+    position: relative !important;
+    display: flex !important;
+    flex-direction: column !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    border-radius: 12px !important;
+  }
+
+  /* Image on top, content below — no overlapping */
+  .gallery-panel-img {
+    position: relative !important;
+    inset: auto !important;
+    width: 100% !important;
+    height: 180px !important;
+    object-fit: cover !important;
+    display: block !important;
+    z-index: 1 !important;
+    flex-shrink: 0 !important;
+  }
+
+  .gallery-panel-overlay {
+    display: none !important; /* Not needed; image is on top, text below */
+  }
+
+  .gallery-panel-content {
+    position: relative !important;
+    z-index: 2 !important;
+    padding: 1.25rem !important;
+    background: var(--bg-card) !important;
+  }
+
+  .gallery-panel-title {
+    font-size: 1.3rem !important;
+  }
+
+  .gallery-panel-desc {
+    font-size: 0.88rem !important;
+    color: var(--text-secondary) !important;
+  }
+
+  .horizontal-gallery-counter {
+    display: none !important;
+  }
+
+  .horizontal-gallery-header {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 0.5rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+
+  /* ---- Stacked Cards Adaptation on Mobile ---- */
+  .stacked-card {
+    position: relative !important;
+    top: 0 !important;
+    transform: none !important;
+    opacity: 1 !important;
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
+    padding: 1.75rem !important;
+  }
+
+  /* ---- Footer ---- */
+  .footer-top {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .footer-brand-info {
+    grid-column: span 1;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 1.25rem;
+    text-align: center;
+  }
+
+  /* Toast Notification */
+  .toast-container {
+    bottom: 1rem;
+    right: 1rem;
+    left: 1rem;
+  }
+
+  .toast {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* --- Small Mobile Phones (320px to 414px) --- */
+@media (max-width: 414px) {
+  :root {
+    --container-px: 1rem;
+  }
+
+  .hero-title {
+    font-size: 1.95rem !important;
+  }
+
+  .hero-portrait-frame {
+    max-height: 320px !important;
+    max-width: 260px !important;
+  }
+
+  .pricing-card {
+    padding: 2rem 1.25rem !important;
+  }
+
+  .price-amount {
+    font-size: 2.4rem !important;
+  }
+
+  .currency-btn {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.72rem;
+  }
+
+  /* Extra tiny screen: compact nav */
+  .nav-brand-text {
+    font-size: 0.85rem !important;
+  }
+
+  .nav-brand-logo {
+    width: 24px !important;
+    height: 24px !important;
+    min-width: 24px !important;
+  }
+
+  .btn {
+    font-size: 0.82rem !important;
+    padding: 0.65rem 1.1rem !important;
+  }
+
+  .story-step h3 {
+    font-size: 1.4rem !important;
+  }
+}
+
+/* --- Accessibility: Prefers-Reduced-Motion --- */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .cursor-dot, .cursor-follower {
+    display: none !important;
+  }
+}

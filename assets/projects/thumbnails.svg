@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgThumb" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0E080A" />
+      <stop offset="50%" stop-color="#1A0D10" />
+      <stop offset="100%" stop-color="#09090B" />
+    </linearGradient>
+    <radialGradient id="thumbRedGlow" cx="40%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#E50932" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="800" fill="url(#bgThumb)" />
+  <circle cx="500" cy="350" r="400" fill="url(#thumbRedGlow)" />
+
+  <!-- Showcase Cards of High Impact Thumbnails -->
+  <g transform="translate(150, 120)">
+    <!-- Main Large Thumbnail Mockup -->
+    <rect width="900" height="520" rx="20" fill="#171719" stroke="rgba(255,255,255,0.12)" stroke-width="2" />
+    
+    <!-- Thumbnail Composition Art -->
+    <g transform="translate(30, 30)">
+      <rect width="840" height="460" rx="14" fill="#09090B" stroke="rgba(229,9,50,0.3)" stroke-width="2" />
+      
+      <!-- Bold Editorial Visual Hook Elements -->
+      <path d="M 0 0 L 320 0 L 220 460 L 0 460 Z" fill="rgba(229,9,50,0.25)" />
+      
+      <!-- Big Typography inside Thumbnail -->
+      <text x="60" y="140" fill="#F5F5F5" font-family="'Space Grotesk', sans-serif" font-weight="900" font-size="64" letter-spacing="-2">HOW I BUILT</text>
+      <text x="60" y="215" fill="#E50932" font-family="'Space Grotesk', sans-serif" font-weight="900" font-size="68" letter-spacing="-2">THE IMPOSSIBLE</text>
+      <text x="60" y="275" fill="#FFFFFF" font-family="'Inter', sans-serif" font-weight="700" font-size="28" letter-spacing="4">WEBSITE IN 2026</text>
+
+      <!-- Badge Hook -->
+      <rect x="60" y="320" width="180" height="42" rx="8" fill="#E50932" />
+      <text x="150" y="347" fill="#FFFFFF" font-family="'Space Grotesk', sans-serif" font-weight="800" font-size="16" text-anchor="middle" letter-spacing="1">100% VANILLA JS</text>
+
+      <!-- Graphical Focus Elements -->
+      <g transform="translate(620, 160)">
+        <circle cx="100" cy="100" r="90" fill="none" stroke="#E50932" stroke-width="6" stroke-dasharray="12 6" />
+        <polygon points="100,50 145,135 55,135" fill="#F5F5F5" />
+        <circle cx="100" cy="100" r="15" fill="#E50932" />
+      </g>
+    </g>
+  </g>
+
+  <!-- Tag overlay -->
+  <g transform="translate(180, 80)">
+    <rect width="210" height="34" rx="17" fill="#171719" stroke="rgba(229,9,50,0.5)" />
+    <text x="105" y="22" fill="#E50932" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" text-anchor="middle" letter-spacing="1.5">THUMBNAIL DESIGN</text>
+  </g>
+</svg>

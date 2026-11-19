@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgVideo" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#08080A" />
+      <stop offset="50%" stop-color="#141014" />
+      <stop offset="100%" stop-color="#09090B" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="800" fill="url(#bgVideo)" />
+
+  <!-- Video Editor Interface Mockup -->
+  <g transform="translate(140, 90)">
+    <rect width="920" height="620" rx="16" fill="#111113" stroke="rgba(255,255,255,0.10)" stroke-width="1.5" />
+    <!-- Header -->
+    <rect width="920" height="48" rx="16" fill="#171719" />
+    <circle cx="28" cy="24" r="6" fill="#FF5F56" />
+    <circle cx="48" cy="24" r="6" fill="#FFBD2E" />
+    <circle cx="68" cy="24" r="6" fill="#27C93F" />
+    <text x="460" y="28" fill="#A1A1AA" font-family="'Space Grotesk', sans-serif" font-size="11" text-anchor="middle" letter-spacing="1">CINEMATIC TIMELINE SEQUENCE • 4K 60FPS</text>
+
+    <!-- Preview Monitor -->
+    <g transform="translate(40, 75)">
+      <rect width="520" height="290" rx="10" fill="#09090B" stroke="rgba(255,255,255,0.08)" />
+      <!-- Letterbox Video Scene -->
+      <polygon points="120,240 260,110 400,240" fill="#1F1F24" />
+      <circle cx="380" cy="90" r="28" fill="#E50932" opacity="0.8" />
+      <text x="260" y="260" fill="#F5F5F5" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="14" text-anchor="middle">CINEMATIC COLOR GRADE &amp; PACED CUTS</text>
+    </g>
+
+    <!-- Scopes & Audio Meters -->
+    <g transform="translate(585, 75)">
+      <rect width="295" height="290" rx="10" fill="#171719" stroke="rgba(255,255,255,0.08)" />
+      <text x="25" y="35" fill="#E50932" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="12">AUDIO &amp; PACING TELEMETRY</text>
+      
+      <!-- Waveform graphic -->
+      <path d="M 25 150 Q 50 80 80 150 T 140 150 T 200 150 T 260 150" fill="none" stroke="#E50932" stroke-width="3" />
+      <path d="M 25 180 Q 60 120 100 180 T 180 180 T 260 180" fill="none" stroke="#A1A1AA" stroke-width="2" />
+      <text x="25" y="240" fill="#A1A1AA" font-family="'Inter', sans-serif" font-size="12">Render Pipeline: Pro-Res 422</text>
+      <text x="25" y="265" fill="#F5F5F5" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="14">Dynamic Transitions &amp; Sound FX</text>
+    </g>
+
+    <!-- Multi-Track Editing Timeline -->
+    <g transform="translate(40, 390)">
+      <rect width="840" height="195" rx="10" fill="#171719" stroke="rgba(255,255,255,0.08)" />
+      
+      <!-- Time Ruler -->
+      <rect width="840" height="28" rx="6" fill="#1C1C22" />
+      <line x1="280" y1="0" x2="280" y2="195" stroke="#E50932" stroke-width="2" />
+
+      <!-- Video Track 1 -->
+      <rect x="20" y="40" width="240" height="36" rx="6" fill="#E50932" opacity="0.85" />
+      <rect x="270" y="40" width="310" height="36" rx="6" fill="#B80F2E" />
+      <rect x="590" y="40" width="230" height="36" rx="6" fill="#E50932" opacity="0.85" />
+
+      <!-- B-Roll Track 2 -->
+      <rect x="140" y="85" width="210" height="34" rx="6" fill="#3A3A44" />
+      <rect x="420" y="85" width="180" height="34" rx="6" fill="#3A3A44" />
+
+      <!-- Audio Track 3 -->
+      <rect x="20" y="130" width="800" height="42" rx="6" fill="#202028" stroke="rgba(229,9,50,0.3)" />
+      <path d="M 30 151 L 50 142 L 70 160 L 90 140 L 110 155 L 130 140 L 150 151 L 180 135 L 210 155 L 240 140 L 280 155 L 320 140 L 400 155 L 500 140 L 600 155 L 700 140 L 800 151" fill="none" stroke="#E50932" stroke-width="1.5" />
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Products &amp; Templates — YSN Works Store</title>
+  <meta name="description" content="Digital products, website templates, and creative assets by Yaseen Malik (YSN Works).">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="../assets/images/logo.png">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <link rel="stylesheet" href="../css/products.css">
+
+  <!-- CDNs -->
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+  <!-- SVG Liquid Page Transition Layer -->
+  <div class="page-transition-curtain" aria-hidden="true">
+    <svg viewBox="0 0 100 100" preserveAspectRatio="none">
+      <path id="transitionPath" d="M 0 100 V 100 Q 50 100 100 100 V 100 Z" />
+    </svg>
+  </div>
+
+  <div class="cursor-dot"></div>
+  <div class="cursor-follower"></div>
+
+  <!-- Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-wrapper">
+      <nav class="nav-inner">
+        <a href="../index.html" class="nav-brand magnetic-wrap">
+          <img src="../assets/images/logo.png" alt="YSN Works Logo" class="nav-brand-logo">
+          <span class="nav-brand-text">YSN <span>WORKS</span></span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="../index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="products.html" class="nav-link active">Products</a></li>
+          <li><a href="faq.html" class="nav-link">FAQ</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="theme-toggle magnetic-wrap" aria-label="Toggle Theme"></button>
+          <a href="contact.html" class="btn btn-sm btn-primary magnetic-wrap">Start Project</a>
+          <button class="mobile-toggle" aria-label="Toggle Menu"><span></span><span></span><span></span></button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <ul class="mobile-drawer-links">
+      <li><a href="../index.html" class="mobile-drawer-link">Home</a></li>
+      <li><a href="about.html" class="mobile-drawer-link">About</a></li>
+      <li><a href="portfolio.html" class="mobile-drawer-link">Portfolio</a></li>
+      <li><a href="services.html" class="mobile-drawer-link">Services</a></li>
+      <li><a href="products.html" class="mobile-drawer-link active">Products</a></li>
+      <li><a href="faq.html" class="mobile-drawer-link">FAQ</a></li>
+      <li><a href="contact.html" class="mobile-drawer-link">Contact</a></li>
+    </ul>
+    <div class="mobile-drawer-footer">
+      <span style="color: var(--text-muted); font-size: 0.9rem;">111.limitra.pk@gmail.com</span>
+      <span style="color: var(--accent-crimson); font-size: 0.9rem; font-weight: 600;">WhatsApp: 03079649008</span>
+    </div>
+  </div>
+
+  <main>
+    <section class="products-hero">
+      <div class="ambient-crimson-glow" style="top: 10%; right: 15%; width: 450px; height: 450px;"></div>
+      <div class="container">
+        <div class="section-tag">DIGITAL ASSETS &amp; KITS</div>
+        <h1 class="section-title kinetic-title">Digital Products &amp; Store.</h1>
+        <p class="section-subtitle">
+          Ready-to-deploy website templates, creative developer code vaults, and editing asset packs.
+        </p>
+
+        <!-- Store Toolbar with Live Currency Switcher -->
+        <div class="store-toolbar">
+          <div style="font-size: 0.9rem; color: var(--text-secondary);">
+            <span>Catalog Pricing Currency:</span>
+          </div>
+          <div class="currency-selector-wrap">
+            <button class="currency-btn active" data-currency="PKR">PKR (Rs.)</button>
+            <button class="currency-btn" data-currency="USD">USD ($)</button>
+            <button class="currency-btn" data-currency="GBP">GBP (£)</button>
+            <button class="currency-btn" data-currency="EUR">EUR (€)</button>
+            <button class="currency-btn" data-currency="AED">AED</button>
+            <button class="currency-btn" data-currency="SAR">SAR</button>
+          </div>
+        </div>
+
+        <!-- Products Container (Prepared for future use with Coming Soon state) -->
+        <div id="productsContainer">
+          <!-- Populated by products.js -->
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© 2026 YSN Works. All rights reserved.</p>
+        <div class="footer-socials">
+          <a href="../index.html" class="footer-link">Home</a>
+          <a href="portfolio.html" class="footer-link">Portfolio</a>
+          <a href="services.html" class="footer-link">Services</a>
+          <a href="contact.html" class="footer-link">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/animations.js"></script>
+  <script src="../js/products.js"></script>
+</body>
+</html>

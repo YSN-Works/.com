@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgAgency" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#08080A" />
+      <stop offset="60%" stop-color="#141113" />
+      <stop offset="100%" stop-color="#09090B" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="800" fill="url(#bgAgency)" />
+
+  <g transform="translate(140, 90)">
+    <rect width="920" height="620" rx="16" fill="#111113" stroke="rgba(255,255,255,0.10)" stroke-width="1.5" />
+    <rect width="920" height="48" rx="16" fill="#171719" />
+    <circle cx="28" cy="24" r="6" fill="#FF5F56" />
+    <circle cx="48" cy="24" r="6" fill="#FFBD2E" />
+    <circle cx="68" cy="24" r="6" fill="#27C93F" />
+    <text x="460" y="28" fill="#A1A1AA" font-family="'Space Grotesk', sans-serif" font-size="11" text-anchor="middle" letter-spacing="1">AGENCY-EXPERIENCE.YSNWORKS.DEV</text>
+
+    <g transform="translate(50, 75)">
+      <rect width="140" height="26" rx="13" fill="rgba(229,9,50,0.15)" stroke="rgba(229,9,50,0.4)" />
+      <text x="70" y="17" fill="#E50932" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" text-anchor="middle" letter-spacing="1.5">CREATIVE AGENCY</text>
+
+      <text x="0" y="80" fill="#F5F5F5" font-family="'Space Grotesk', sans-serif" font-weight="800" font-size="44">CONVERTING ATTENTION.</text>
+      <text x="0" y="115" fill="#A1A1AA" font-family="'Inter', sans-serif" font-size="14">Landing pages engineered with ruthless focus on user engagement and conversion rate.</text>
+
+      <g transform="translate(0, 160)">
+        <rect width="820" height="260" rx="12" fill="#171719" stroke="rgba(255,255,255,0.08)" />
+        <rect x="30" y="30" width="360" height="200" rx="8" fill="#222228" />
+        <text x="50" y="75" fill="#F5F5F5" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="20">Visual Identity &amp; Hook</text>
+        <text x="50" y="105" fill="#A1A1AA" font-family="'Inter', sans-serif" font-size="13">High-contrast branding and kinetic headlines</text>
+        
+        <rect x="420" y="30" width="370" height="200" rx="8" fill="#222228" />
+        <text x="440" y="75" fill="#F5F5F5" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="20">WhatsApp Direct Flow</text>
+        <text x="440" y="105" fill="#A1A1AA" font-family="'Inter', sans-serif" font-size="13">Seamless 1-click consultation initiation</text>
+      </g>
+    </g>
+  </g>
+</svg>

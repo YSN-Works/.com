@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Yaseen Malik — YSN Works</title>
+  <meta name="description" content="Inquire about web development, thumbnail design, or video editing. Connect directly with Yaseen Malik via WhatsApp or email.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="../assets/images/logo.png">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <link rel="stylesheet" href="../css/contact.css">
+
+  <!-- CDNs -->
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+  <!-- SVG Liquid Page Transition Layer -->
+  <div class="page-transition-curtain" aria-hidden="true">
+    <svg viewBox="0 0 100 100" preserveAspectRatio="none">
+      <path id="transitionPath" d="M 0 100 V 100 Q 50 100 100 100 V 100 Z" />
+    </svg>
+  </div>
+
+  <div class="cursor-dot"></div>
+  <div class="cursor-follower"></div>
+
+  <!-- Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-wrapper">
+      <nav class="nav-inner">
+        <a href="../index.html" class="nav-brand magnetic-wrap">
+          <img src="../assets/images/logo.png" alt="YSN Works Logo" class="nav-brand-logo">
+          <span class="nav-brand-text">YSN <span>WORKS</span></span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="../index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="products.html" class="nav-link">Products</a></li>
+          <li><a href="faq.html" class="nav-link">FAQ</a></li>
+          <li><a href="contact.html" class="nav-link active">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="theme-toggle magnetic-wrap" aria-label="Toggle Theme"></button>
+          <a href="contact.html" class="btn btn-sm btn-primary magnetic-wrap">Start Project</a>
+          <button class="mobile-toggle" aria-label="Toggle Menu"><span></span><span></span><span></span></button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <ul class="mobile-drawer-links">
+      <li><a href="../index.html" class="mobile-drawer-link">Home</a></li>
+      <li><a href="about.html" class="mobile-drawer-link">About</a></li>
+      <li><a href="portfolio.html" class="mobile-drawer-link">Portfolio</a></li>
+      <li><a href="services.html" class="mobile-drawer-link">Services</a></li>
+      <li><a href="products.html" class="mobile-drawer-link">Products</a></li>
+      <li><a href="faq.html" class="mobile-drawer-link">FAQ</a></li>
+      <li><a href="contact.html" class="mobile-drawer-link active">Contact</a></li>
+    </ul>
+    <div class="mobile-drawer-footer">
+      <span style="color: var(--text-muted); font-size: 0.9rem;">111.limitra.pk@gmail.com</span>
+      <span style="color: var(--accent-crimson); font-size: 0.9rem; font-weight: 600;">WhatsApp: 03079649008</span>
+    </div>
+  </div>
+
+  <main>
+    <section class="contact-hero">
+      <div class="ambient-crimson-glow" style="top: 10%; right: 10%; width: 450px; height: 450px;"></div>
+      <div class="container">
+        <div class="section-tag">GET IN TOUCH</div>
+        <h1 class="section-title kinetic-title">Let's Discuss Your Next Project.</h1>
+        <p class="section-subtitle">
+          Fill out the brief below to generate your inquiry and send directly via WhatsApp, or reach out through email.
+        </p>
+
+        <div class="contact-layout">
+          <!-- Left: Contact Details Sidebar -->
+          <div class="contact-sidebar">
+            <div class="contact-info-card">
+              <div class="info-item">
+                <div class="info-icon">💬</div>
+                <div class="info-content">
+                  <h5>WhatsApp Direct</h5>
+                  <p>
+                    <a href="https://wa.me/923079649008" target="_blank" rel="noopener" style="color: #25D366; font-weight: 600;">03079649008</a>
+                  </p>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="info-icon">✉</div>
+                <div class="info-content">
+                  <h5>Email Address</h5>
+                  <p>
+                    <a href="mailto:111.limitra.pk@gmail.com">111.limitra.pk@gmail.com</a>
+                    <button class="email-copy-btn" id="copyEmailBtn">Copy</button>
+                  </p>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="info-icon">⏱</div>
+                <div class="info-content">
+                  <h5>Response Window</h5>
+                  <p>Replies typically within a few hours</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Links -->
+            <div class="glass-card" style="padding: 1.75rem;">
+              <h4 style="margin-bottom: 1rem; font-size: 1.05rem;">Connect Online</h4>
+              <div style="display: flex; gap: 0.75rem;">
+                <a href="https://wa.me/923079649008" target="_blank" rel="noopener" class="social-icon-btn magnetic-wrap" aria-label="WhatsApp">
+                  <img src="../assets/icons/whatsapp.svg" alt="WhatsApp">
+                </a>
+                <a href="https://www.instagram.com/ysn_works?stkn=MWVxb2JjMWIzc3h3dQ%3D%3D&utm_source=qr" target="_blank" rel="noopener" class="social-icon-btn magnetic-wrap" aria-label="Instagram">
+                  <img src="../assets/icons/instagram.svg" alt="Instagram">
+                </a>
+                <a href="https://www.tiktok.com/@ysn_works?_r=1&_t=ZN-99WgQX2zUKk" target="_blank" rel="noopener" class="social-icon-btn magnetic-wrap" aria-label="TikTok">
+                  <img src="../assets/icons/tiktok.svg" alt="TikTok">
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Project Inquiry Form -->
+          <div class="contact-form-card">
+            <h3 style="font-size: 1.6rem; margin-bottom: 0.4rem;">Project Brief</h3>
+            <p style="color: var(--text-secondary); margin-bottom: 1.75rem; font-size: 0.92rem;">
+              Fill in your details to create a pre-formatted message for WhatsApp.
+            </p>
+
+            <form id="inquiryForm" novalidate>
+              <!-- Name & Email -->
+              <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.25rem;">
+                <div class="form-group">
+                  <label for="clientName" class="form-label">Full Name *</label>
+                  <input type="text" id="clientName" class="form-input" placeholder="e.g. John Doe" required>
+                  <span class="form-error-msg">Please enter your name.</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="clientEmail" class="form-label">Email Address *</label>
+                  <input type="email" id="clientEmail" class="form-input" placeholder="john@example.com" required>
+                  <span class="form-error-msg">Please enter a valid email address.</span>
+                </div>
+              </div>
+
+              <!-- Subject -->
+              <div class="form-group">
+                <label for="clientSubject" class="form-label">Subject *</label>
+                <input type="text" id="clientSubject" class="form-input" placeholder="e.g. New Website Build" required>
+                <span class="form-error-msg">Please provide a subject.</span>
+              </div>
+
+              <!-- Service Required -->
+              <div class="form-group">
+                <label class="form-label">Service Required</label>
+                <div class="pill-selector-group">
+                  <div class="pill-option">
+                    <input type="radio" id="srvWeb" name="serviceType" value="Web Development" checked>
+                    <label for="srvWeb">Web Development</label>
+                  </div>
+                  <div class="pill-option">
+                    <input type="radio" id="srvThumb" name="serviceType" value="Thumbnail Design">
+                    <label for="srvThumb">Thumbnail Design</label>
+                  </div>
+                  <div class="pill-option">
+                    <input type="radio" id="srvVideo" name="serviceType" value="Video Editing">
+                    <label for="srvVideo">Video Editing</label>
+                  </div>
+                  <div class="pill-option">
+                    <input type="radio" id="srvPackage" name="serviceType" value="Full Creative Package">
+                    <label for="srvPackage">Full Creative Package</label>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Budget Range -->
+              <div class="form-group">
+                <label class="form-label">Estimated Budget</label>
+                <div class="pill-selector-group">
+                  <div class="pill-option">
+                    <input type="radio" id="b1" name="budget" value="Rs. 15,000 – 30,000" checked>
+                    <label for="b1">Rs. 15k – 30k</label>
+                  </div>
+                  <div class="pill-option">
+                    <input type="radio" id="b2" name="budget" value="Rs. 30,000 – 60,000">
+                    <label for="b2">Rs. 30k – 60k</label>
+                  </div>
+                  <div class="pill-option">
+                    <input type="radio" id="b3" name="budget" value="Rs. 60,000+">
+                    <label for="b3">Rs. 60k+</label>
+                  </div>
+                  <div class="pill-option">
+                    <input type="radio" id="b4" name="budget" value="Custom Budget">
+                    <label for="b4">Custom</label>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Project Description / Message -->
+              <div class="form-group">
+                <label for="clientMessage" class="form-label">Project Description / Message *</label>
+                <textarea id="clientMessage" class="form-textarea" placeholder="Describe your goals, requirements, deadline, or references..." required></textarea>
+                <span class="form-error-msg">Please write a short description (minimum 8 characters).</span>
+              </div>
+
+              <!-- Submit Button: Send via WhatsApp -->
+              <button type="submit" class="btn btn-lg btn-primary magnetic-wrap" style="width: 100%;">
+                <span>Send via WhatsApp</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© 2026 YSN Works. All rights reserved.</p>
+        <div class="footer-socials">
+          <a href="../index.html" class="footer-link">Home</a>
+          <a href="about.html" class="footer-link">About</a>
+          <a href="portfolio.html" class="footer-link">Portfolio</a>
+          <a href="services.html" class="footer-link">Services</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/animations.js"></script>
+  <script src="../js/contact.js"></script>
+</body>
+</html>

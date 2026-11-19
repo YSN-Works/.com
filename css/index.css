@@ -1,0 +1,529 @@
+/* ==========================================================================
+   YSN WORKS — HOME PAGE STYLES (index.css)
+   Refined Crimson — Editorial Luxury Aesthetic
+   Two-Column Hero, Pinned Storytelling (Zero Overlap), Tool Grid, Pricing
+   ========================================================================== */
+
+/* --- Hero Section --- */
+.hero-section {
+  min-height: 92vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-top: clamp(6.5rem, 13vh, 9.5rem);
+  padding-bottom: clamp(3.5rem, 7vh, 5.5rem);
+  overflow: hidden;
+}
+
+.hero-grid-layout {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  align-items: center;
+  gap: clamp(2rem, 4vw, 4.5rem);
+  position: relative;
+  z-index: 10;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.hero-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.35rem 0.9rem;
+  background: var(--accent-crimson-subtle);
+  border: 1px solid var(--border-accent);
+  border-radius: var(--radius-full);
+  font-family: var(--font-heading);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--accent-crimson);
+  margin-bottom: 1.5rem;
+}
+
+.eyebrow-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent-crimson);
+  box-shadow: 0 0 8px var(--accent-crimson);
+}
+
+.hero-title {
+  font-size: clamp(2.4rem, 4.8vw, 4.2rem);
+  font-weight: 800;
+  line-height: 1.12;
+  letter-spacing: -0.03em;
+  margin-bottom: 1.25rem;
+  color: var(--text-primary);
+  max-width: 650px;
+}
+
+.hero-subtitle {
+  font-size: clamp(1rem, 1.6vw, 1.15rem);
+  color: var(--text-secondary);
+  line-height: 1.7;
+  max-width: 540px;
+  margin-bottom: 2rem;
+}
+
+.hero-cta-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2.25rem;
+}
+
+.hero-skill-chips {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  flex-wrap: wrap;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-subtle);
+  width: 100%;
+  max-width: 540px;
+}
+
+.skill-chip-tag {
+  font-family: var(--font-heading);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  padding: 0.3rem 0.8rem;
+  border-radius: var(--radius-full);
+}
+
+/* --- Hero Right Column: Personal Portrait --- */
+.hero-portrait-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+}
+
+.hero-portrait-frame {
+  position: relative;
+  width: 100%;
+  max-width: 440px;
+  aspect-ratio: 4 / 5;
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  overflow: hidden;
+  background: radial-gradient(circle at 50% 40%, rgba(229, 9, 50, 0.16) 0%, rgba(23, 23, 25, 0.95) 70%);
+  border: 1px solid var(--border-subtle);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5);
+}
+
+.hero-portrait-img {
+  width: 90%;
+  max-height: 96%;
+  object-fit: contain;
+  position: relative;
+  z-index: 5;
+  filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.6));
+  transition: transform 0.4s var(--transition-smooth);
+}
+
+.hero-portrait-frame:hover .hero-portrait-img {
+  transform: scale(1.02);
+}
+
+.hero-portrait-badge {
+  position: absolute;
+  bottom: 1.25rem;
+  left: 1.25rem;
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-md);
+  padding: 0.65rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  z-index: 10;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.4);
+}
+
+.portrait-badge-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--accent-crimson-subtle);
+  border: 1px solid var(--border-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-crimson);
+  font-size: 0.85rem;
+}
+
+.portrait-badge-text h6 {
+  font-size: 0.88rem;
+  color: var(--text-primary);
+  margin-bottom: 2px;
+}
+
+.portrait-badge-text p {
+  font-size: 0.72rem;
+  color: var(--text-secondary);
+}
+
+/* --- Pinned Storytelling Section (CRITICAL OVERLAP FIX) --- */
+.story-section {
+  position: relative;
+  background: var(--bg-primary);
+}
+
+.story-pin-container {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+}
+
+.story-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  align-items: center;
+  gap: clamp(3rem, 6vw, 6rem);
+  width: 100%;
+}
+
+.story-steps-col {
+  position: relative;
+  min-height: 320px;
+  display: flex;
+  align-items: center;
+}
+
+.story-step {
+  width: 100%;
+  /* On desktop: JS sets position:absolute for pinning. On mobile: responsive.css overrides to relative */
+}
+
+.story-step-num {
+  font-family: var(--font-heading);
+  font-size: 0.82rem;
+  color: var(--accent-crimson);
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 0.75rem;
+}
+
+.story-step h3 {
+  font-size: clamp(1.8rem, 3.2vw, 2.5rem);
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.story-step p {
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+.story-visual-col {
+  position: relative;
+  aspect-ratio: 4 / 3;
+}
+
+.story-visual-panel {
+  position: absolute;
+  inset: 0;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--border-subtle);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45);
+}
+
+.story-visual-panel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* --- Redesigned Tools & Technologies Grid --- */
+.tools-showcase-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.tool-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: transform 0.3s var(--transition-smooth),
+              border-color 0.3s ease,
+              box-shadow 0.3s ease;
+}
+
+.tool-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--border-accent);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.35);
+}
+
+.tool-logo-wrap {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-md);
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin-bottom: 1.25rem;
+}
+
+.tool-logo-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.tool-card h4 {
+  font-size: 1.15rem;
+  margin-bottom: 0.4rem;
+}
+
+.tool-card p {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.55;
+}
+
+/* --- Horizontal Gallery (Portfolio Showcase) --- */
+.horizontal-gallery-section {
+  position: relative;
+  background: var(--bg-secondary);
+  overflow: hidden;
+}
+
+.horizontal-gallery-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 2.5rem;
+}
+
+.horizontal-gallery-counter {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--accent-crimson);
+  letter-spacing: 2px;
+}
+
+.horizontal-gallery-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.horizontal-gallery-track {
+  display: flex;
+  gap: 2rem;
+  width: max-content;
+  will-change: transform;
+}
+
+.horizontal-gallery-panel {
+  min-width: 52vw;
+  height: 65vh;
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 2.5rem;
+}
+
+.gallery-panel-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.gallery-panel-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(9, 9, 11, 0.1) 0%, rgba(9, 9, 11, 0.92) 80%);
+  z-index: 2;
+}
+
+.gallery-panel-content {
+  position: relative;
+  z-index: 3;
+  /* On mobile, background is set via responsive.css override */
+}
+
+.gallery-panel-cat {
+  font-family: var(--font-heading);
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--accent-crimson);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 0.4rem;
+  display: block;
+}
+
+.gallery-panel-title {
+  font-size: clamp(1.6rem, 2.8vw, 2.3rem);
+  font-weight: 800;
+  margin-bottom: 0.65rem;
+  color: #FFFFFF;
+}
+
+.gallery-panel-desc {
+  max-width: 520px;
+  font-size: 0.95rem;
+  color: #D4D4D8;
+  margin-bottom: 1.25rem;
+}
+
+.gallery-panel-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: #FFFFFF;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.9rem;
+  border-bottom: 2px solid var(--accent-crimson);
+  padding-bottom: 3px;
+}
+
+/* --- Pricing Section --- */
+.pricing-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+  gap: 2rem;
+}
+
+.pricing-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  transition: transform 0.35s var(--transition-smooth), border-color 0.35s ease;
+}
+
+.pricing-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--border-active);
+}
+
+.pricing-card.featured {
+  border-color: var(--accent-crimson);
+  box-shadow: 0 16px 45px var(--accent-crimson-glow);
+}
+
+.pricing-badge-popular {
+  position: absolute;
+  top: -13px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--accent-crimson);
+  color: #FFFFFF;
+  font-family: var(--font-heading);
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.3rem 0.9rem;
+  border-radius: var(--radius-full);
+  letter-spacing: 1px;
+}
+
+.pricing-plan-num {
+  font-family: var(--font-heading);
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--accent-crimson);
+  letter-spacing: 2px;
+  margin-bottom: 0.5rem;
+}
+
+.pricing-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.pricing-card-desc {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 1.75rem;
+}
+
+.pricing-cost-row {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.price-amount {
+  font-family: var(--font-heading);
+  font-size: 2.6rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  line-height: 1;
+}
+
+/* --- Final Call To Action --- */
+.final-cta-card {
+  background: linear-gradient(180deg, var(--bg-card) 0%, #111113 100%);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: clamp(3rem, 6vw, 5.5rem) clamp(1.5rem, 4vw, 3.5rem);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.final-cta-title {
+  font-size: clamp(2.2rem, 4.5vw, 3.8rem);
+  font-weight: 800;
+  line-height: 1.15;
+  margin-bottom: 1.25rem;
+}
+
+.final-cta-desc {
+  max-width: 580px;
+  margin: 0 auto 2.25rem;
+  font-size: clamp(1rem, 1.6vw, 1.15rem);
+}

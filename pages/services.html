@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services &amp; Pricing Plans — YSN Works</title>
+  <meta name="description" content="Website development, YouTube thumbnail design, and cinematic video editing services by Yaseen Malik (YSN Works).">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="../assets/images/logo.png">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <link rel="stylesheet" href="../css/services.css">
+
+  <!-- CDNs -->
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+  <!-- SVG Liquid Page Transition Layer -->
+  <div class="page-transition-curtain" aria-hidden="true">
+    <svg viewBox="0 0 100 100" preserveAspectRatio="none">
+      <path id="transitionPath" d="M 0 100 V 100 Q 50 100 100 100 V 100 Z" />
+    </svg>
+  </div>
+
+  <div class="cursor-dot"></div>
+  <div class="cursor-follower"></div>
+
+  <!-- Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-wrapper">
+      <nav class="nav-inner">
+        <a href="../index.html" class="nav-brand magnetic-wrap">
+          <img src="../assets/images/logo.png" alt="YSN Works Logo" class="nav-brand-logo">
+          <span class="nav-brand-text">YSN <span>WORKS</span></span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="../index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+          <li><a href="services.html" class="nav-link active">Services</a></li>
+          <li><a href="products.html" class="nav-link">Products</a></li>
+          <li><a href="faq.html" class="nav-link">FAQ</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="theme-toggle magnetic-wrap" aria-label="Toggle Theme"></button>
+          <a href="contact.html" class="btn btn-sm btn-primary magnetic-wrap">Start Project</a>
+          <button class="mobile-toggle" aria-label="Toggle Menu"><span></span><span></span><span></span></button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <ul class="mobile-drawer-links">
+      <li><a href="../index.html" class="mobile-drawer-link">Home</a></li>
+      <li><a href="about.html" class="mobile-drawer-link">About</a></li>
+      <li><a href="portfolio.html" class="mobile-drawer-link">Portfolio</a></li>
+      <li><a href="services.html" class="mobile-drawer-link active">Services</a></li>
+      <li><a href="products.html" class="mobile-drawer-link">Products</a></li>
+      <li><a href="faq.html" class="mobile-drawer-link">FAQ</a></li>
+      <li><a href="contact.html" class="mobile-drawer-link">Contact</a></li>
+    </ul>
+    <div class="mobile-drawer-footer">
+      <span style="color: var(--text-muted); font-size: 0.9rem;">111.limitra.pk@gmail.com</span>
+      <span style="color: var(--accent-crimson); font-size: 0.9rem; font-weight: 600;">WhatsApp: 03079649008</span>
+    </div>
+  </div>
+
+  <main>
+    <!-- Services Hero -->
+    <section class="services-hero">
+      <div class="ambient-crimson-glow" style="top: 10%; right: 10%; width: 450px; height: 450px;"></div>
+      <div class="container">
+        <div class="section-tag">SERVICES &amp; RATES</div>
+        <h1 class="section-title kinetic-title">Professional Creative Offerings.</h1>
+        <p class="section-subtitle">
+          Transparent pricing and dedicated execution across web development, thumbnail design, and video editing.
+        </p>
+
+        <!-- Pricing Section with Live Currency Switcher -->
+        <div style="margin-top: 3.5rem;">
+          <div class="pricing-toolbar">
+            <h2 style="font-size: 1.6rem;">Website Development Packages</h2>
+            <div class="currency-selector-wrap">
+              <button class="currency-btn active" data-currency="PKR">PKR (Rs.)</button>
+              <button class="currency-btn" data-currency="USD">USD ($)</button>
+              <button class="currency-btn" data-currency="GBP">GBP (£)</button>
+              <button class="currency-btn" data-currency="EUR">EUR (€)</button>
+              <button class="currency-btn" data-currency="AED">AED</button>
+              <button class="currency-btn" data-currency="SAR">SAR</button>
+            </div>
+          </div>
+
+          <div class="pricing-grid">
+            <!-- 01 — STARTER PLAN -->
+            <div class="pricing-card">
+              <div>
+                <div class="pricing-plan-num">01 — STARTER PLAN</div>
+                <h3>Starter Plan</h3>
+                <p class="pricing-card-desc">Basic websites for individuals and small businesses.</p>
+                <div class="pricing-cost-row">
+                  <span class="price-amount" data-base-price-pkr="15000">Rs. 15,000</span>
+                </div>
+              </div>
+              <a href="https://wa.me/923079649008?text=Hello%20Yaseen!%20I%20am%20interested%20in%20the%20Starter%20Plan%20(Rs.%2015,000)" target="_blank" rel="noopener" class="btn btn-secondary magnetic-wrap" style="width: 100%;">
+                <span>Book on WhatsApp</span>
+              </a>
+            </div>
+
+            <!-- 02 — PROFESSIONAL PLAN (Most Popular) -->
+            <div class="pricing-card featured">
+              <span class="pricing-badge-popular">MOST POPULAR</span>
+              <div>
+                <div class="pricing-plan-num">02 — PROFESSIONAL PLAN</div>
+                <h3>Professional Plan</h3>
+                <p class="pricing-card-desc">Professional websites with custom design and animations.</p>
+                <div class="pricing-cost-row">
+                  <span class="price-amount" data-base-price-pkr="32000">Rs. 32,000</span>
+                </div>
+              </div>
+              <a href="https://wa.me/923079649008?text=Hello%20Yaseen!%20I%20am%20interested%20in%20the%20Professional%20Plan%20(Rs.%2032,000)" target="_blank" rel="noopener" class="btn btn-primary magnetic-wrap" style="width: 100%;">
+                <span>Book on WhatsApp</span>
+              </a>
+            </div>
+
+            <!-- 03 — PREMIUM PLAN -->
+            <div class="pricing-card">
+              <div>
+                <div class="pricing-plan-num">03 — PREMIUM PLAN</div>
+                <h3>Premium Plan</h3>
+                <p class="pricing-card-desc">High-end websites with advanced animations and premium experiences.</p>
+                <div class="pricing-cost-row">
+                  <span class="price-amount" data-base-price-pkr="59000">Rs. 59,000</span>
+                </div>
+              </div>
+              <a href="https://wa.me/923079649008?text=Hello%20Yaseen!%20I%20am%20interested%20in%20the%20Premium%20Plan%20(Rs.%2059,000)" target="_blank" rel="noopener" class="btn btn-secondary magnetic-wrap" style="width: 100%;">
+                <span>Book on WhatsApp</span>
+              </a>
+            </div>
+          </div>
+          <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 1.25rem; text-align: center;">
+            * Approximate conversions for international clients. Invoicing available in major currencies.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stacked Core Services Overview -->
+    <section class="section" style="background: var(--bg-secondary);">
+      <div class="container">
+        <div class="section-tag">CAPABILITIES</div>
+        <h2 class="section-title kinetic-title">Detailed Service Overview.</h2>
+        <p class="section-subtitle">How each discipline is delivered with precision and high visual authority.</p>
+
+        <div class="stacked-cards-container">
+          <!-- Stacked Card 1: Web Development -->
+          <div class="stacked-card">
+            <div>
+              <div class="stacked-card-num">01</div>
+              <h3>Web Development</h3>
+              <p>Custom websites built from scratch using clean semantic HTML5, CSS3, JavaScript, and GSAP. Focused on responsive design, 60 FPS animation performance, and smooth user flow.</p>
+              <div style="margin-top: 1.5rem;">
+                <a href="contact.html?package=web" class="btn btn-secondary">Request Web Consultation</a>
+              </div>
+            </div>
+            <div class="stacked-card-visual clip-reveal-polygon">
+              <img src="../assets/projects/ecommerce.svg" alt="Web Development Preview">
+            </div>
+          </div>
+
+          <!-- Stacked Card 2: Thumbnail Design -->
+          <div class="stacked-card">
+            <div>
+              <div class="stacked-card-num">02</div>
+              <h3>YouTube Thumbnail Design</h3>
+              <p>High-contrast, click-through optimized YouTube thumbnails. Hand-crafted in Adobe Photoshop with professional cutouts, facial expression emphasis, dynamic typography, and lighting depth.</p>
+              <div style="margin-top: 1.5rem;">
+                <a href="https://wa.me/923079649008?text=Hello%20Yaseen!%20I%20need%20YouTube%20Thumbnail%20Design" target="_blank" rel="noopener" class="btn btn-secondary">Order Thumbnails</a>
+              </div>
+            </div>
+            <div class="stacked-card-visual">
+              <img src="../assets/projects/thumbnails.svg" alt="Thumbnail Design Preview">
+            </div>
+          </div>
+
+          <!-- Stacked Card 3: Video Editing -->
+          <div class="stacked-card">
+            <div>
+              <div class="stacked-card-num">03</div>
+              <h3>Cinematic Video Editing</h3>
+              <p>Paced video editing for YouTube, short-form reels, and commercial clips. Includes jump cuts, sound design, music beat synchronization, subtitles, and color grading in Premiere Pro and CapCut.</p>
+              <div style="margin-top: 1.5rem;">
+                <a href="https://wa.me/923079649008?text=Hello%20Yaseen!%20I%20need%20Video%20Editing%20services" target="_blank" rel="noopener" class="btn btn-secondary">Discuss Video Edit</a>
+              </div>
+            </div>
+            <div class="stacked-card-visual">
+              <img src="../assets/projects/video-editing.svg" alt="Video Editing Preview">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services CTA -->
+    <section class="section">
+      <div class="container">
+        <div class="final-cta-card">
+          <h2 class="final-cta-title kinetic-title">Have a Custom Project Scope?</h2>
+          <p class="final-cta-desc">Reach out directly on WhatsApp or submit a brief through the contact form.</p>
+          <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+            <a href="https://wa.me/923079649008" target="_blank" rel="noopener" class="btn btn-lg btn-primary magnetic-wrap">
+              <span>Chat on WhatsApp</span>
+            </a>
+            <a href="contact.html" class="btn btn-lg btn-outline magnetic-wrap">
+              <span>Go to Contact Form</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© 2026 YSN Works. All rights reserved.</p>
+        <div class="footer-socials">
+          <a href="../index.html" class="footer-link">Home</a>
+          <a href="about.html" class="footer-link">About</a>
+          <a href="portfolio.html" class="footer-link">Portfolio</a>
+          <a href="contact.html" class="footer-link">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/animations.js"></script>
+  <script src="../js/services.js"></script>
+</body>
+</html>

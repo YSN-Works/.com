@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio &amp; Selected Works — YSN Works</title>
+  <meta name="description" content="Explore selected projects by Yaseen Malik across Web Development, Thumbnail Design, and Video Editing.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="../assets/images/logo.png">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <link rel="stylesheet" href="../css/portfolio.css">
+
+  <!-- CDNs -->
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+  <!-- SVG Liquid Page Transition Layer -->
+  <div class="page-transition-curtain" aria-hidden="true">
+    <svg viewBox="0 0 100 100" preserveAspectRatio="none">
+      <path id="transitionPath" d="M 0 100 V 100 Q 50 100 100 100 V 100 Z" />
+    </svg>
+  </div>
+
+  <div class="cursor-dot"></div>
+  <div class="cursor-follower"></div>
+
+  <!-- Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-wrapper">
+      <nav class="nav-inner">
+        <a href="../index.html" class="nav-brand magnetic-wrap">
+          <img src="../assets/images/logo.png" alt="YSN Works Logo" class="nav-brand-logo">
+          <span class="nav-brand-text">YSN <span>WORKS</span></span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="../index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="portfolio.html" class="nav-link active">Portfolio</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="products.html" class="nav-link">Products</a></li>
+          <li><a href="faq.html" class="nav-link">FAQ</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="theme-toggle magnetic-wrap" aria-label="Toggle Theme"></button>
+          <a href="contact.html" class="btn btn-sm btn-primary magnetic-wrap">Start Project</a>
+          <button class="mobile-toggle" aria-label="Toggle Menu"><span></span><span></span><span></span></button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <ul class="mobile-drawer-links">
+      <li><a href="../index.html" class="mobile-drawer-link">Home</a></li>
+      <li><a href="about.html" class="mobile-drawer-link">About</a></li>
+      <li><a href="portfolio.html" class="mobile-drawer-link active">Portfolio</a></li>
+      <li><a href="services.html" class="mobile-drawer-link">Services</a></li>
+      <li><a href="products.html" class="mobile-drawer-link">Products</a></li>
+      <li><a href="faq.html" class="mobile-drawer-link">FAQ</a></li>
+      <li><a href="contact.html" class="mobile-drawer-link">Contact</a></li>
+    </ul>
+    <div class="mobile-drawer-footer">
+      <span style="color: var(--text-muted); font-size: 0.9rem;">111.limitra.pk@gmail.com</span>
+      <span style="color: var(--accent-crimson); font-size: 0.9rem; font-weight: 600;">WhatsApp: 03079649008</span>
+    </div>
+  </div>
+
+  <main>
+    <!-- Portfolio Hero -->
+    <section class="portfolio-hero">
+      <div class="ambient-crimson-glow" style="top: 5%; left: 10%; width: 420px; height: 420px;"></div>
+      <div class="container">
+        <div class="section-tag">PROJECT ARCHIVE</div>
+        <h1 class="section-title kinetic-title">Selected Works &amp; Case Studies.</h1>
+        <p class="section-subtitle">
+          A showcase of modern web developments, YouTube thumbnail compositions, and cinematic video edits.
+        </p>
+
+        <!-- Filters -->
+        <div class="portfolio-filters">
+          <button class="filter-btn active" data-filter="all">All Disciplines (6)</button>
+          <button class="filter-btn" data-filter="Web Development">Web Development (4)</button>
+          <button class="filter-btn" data-filter="Thumbnail Design">Thumbnail Design</button>
+          <button class="filter-btn" data-filter="Video Editing">Video Editing</button>
+        </div>
+
+        <!-- Dynamic Grid populated from data/projects.json -->
+        <div class="portfolio-grid" id="portfolioGrid">
+          <!-- Fallback initial card -->
+          <div class="portfolio-card" data-category="Web Development">
+            <div class="portfolio-thumb clip-reveal-polygon">
+              <img src="../assets/projects/ecommerce.svg" alt="Modern E-Commerce Storefront">
+            </div>
+            <div class="portfolio-body">
+              <div class="portfolio-tags">
+                <span class="portfolio-cat">Web Development</span>
+              </div>
+              <h3 class="portfolio-title">Modern E-Commerce Storefront</h3>
+              <p class="portfolio-desc">Fast, responsive web development built with clean semantic code, intuitive product filtering, and smooth interactions.</p>
+              <div class="portfolio-tech-list">
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">GSAP</span>
+              </div>
+              <div class="portfolio-footer">
+                <a href="https://wa.me/923079649008" target="_blank" rel="noopener" class="btn btn-sm btn-primary">
+                  <span>Inquire Similar</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Inquiry CTA -->
+    <section class="section">
+      <div class="container">
+        <div class="final-cta-card">
+          <h2 class="final-cta-title kinetic-title">Need Similar Work For Your Brand?</h2>
+          <p class="final-cta-desc">Reach out directly on WhatsApp to discuss deliverables, quotes, and timelines.</p>
+          <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+            <a href="https://wa.me/923079649008" target="_blank" rel="noopener" class="btn btn-lg btn-primary magnetic-wrap">
+              <span>Message on WhatsApp</span>
+            </a>
+            <a href="contact.html" class="btn btn-lg btn-outline magnetic-wrap">
+              <span>Contact Page</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© 2026 YSN Works. All rights reserved.</p>
+        <div class="footer-socials">
+          <a href="../index.html" class="footer-link">Home</a>
+          <a href="about.html" class="footer-link">About</a>
+          <a href="services.html" class="footer-link">Services</a>
+          <a href="contact.html" class="footer-link">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/animations.js"></script>
+  <script src="../js/portfolio.js"></script>
+</body>
+</html>

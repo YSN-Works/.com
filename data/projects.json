@@ -1,0 +1,72 @@
+[
+  {
+    "id": "scentyou",
+    "title": "ScentYou — Premium Perfume Store",
+    "category": "Web Development",
+    "shortDesc": "Full-featured e-commerce store for a premium perfume brand. Features product listings, loyalty rewards, discount flows, and a clean conversion-focused layout.",
+    "fullDesc": "Built for ScentYou.pk — a growing Pakistani perfume brand. Includes product catalog with filtering, promotional banners, loyalty programme integration, and mobile-optimized shopping experience designed for high conversion rates.",
+    "deliverables": ["E-Commerce Development", "Product Catalog & Filters", "Mobile Optimization", "Conversion UI"],
+    "techStack": ["HTML5", "CSS3", "JavaScript", "Shopify"],
+    "accentColor": "#E50932",
+    "liveUrl": "https://scentyou.pk/",
+    "thumbnail": "../assets/projects/scentyou.jpg"
+  },
+  {
+    "id": "furniturehub",
+    "title": "FurnitureHub — Home Furniture Marketplace",
+    "category": "Web Development",
+    "shortDesc": "Comprehensive furniture marketplace with category browsing, same-day delivery promotions, and interior design consultation flows.",
+    "fullDesc": "A large-scale furniture e-commerce platform for FurnitureHub.pk. Features rich category pages, promotional sliders, interior & architectural consultancy sections, and smooth product discovery UX optimized for desktop and mobile.",
+    "deliverables": ["Marketplace Architecture", "Category Navigation", "Promotional Banners", "Mobile Responsive"],
+    "techStack": ["HTML5", "CSS3", "JavaScript", "WordPress"],
+    "accentColor": "#E50932",
+    "liveUrl": "https://furniturehub.pk/",
+    "thumbnail": "../assets/projects/furniturehub.jpg"
+  },
+  {
+    "id": "mysmallrecipes",
+    "title": "MySmallRecipes — Food & Recipe Blog",
+    "category": "Web Development",
+    "shortDesc": "Clean, content-focused recipe blog with category navigation, food photography layouts, and reader-friendly article structure.",
+    "fullDesc": "Developed for MySmallRecipes.com — a recipe and food inspiration blog. Features article-first design with clear category navigation (Pasta, Bread, Vegan, Salad, etc.), food photography showcases, and fast-loading pages for optimal reader experience.",
+    "deliverables": ["Blog CMS Development", "Category Architecture", "SEO-Optimized Pages", "Mobile Layout"],
+    "techStack": ["HTML5", "CSS3", "JavaScript", "WordPress"],
+    "accentColor": "#E50932",
+    "liveUrl": "https://mysmallrecipes.com/",
+    "thumbnail": "../assets/projects/mysmallrecipes.jpg"
+  },
+  {
+    "id": "hamzadental",
+    "title": "Dr. Hamza Dental Centre — Medical Website",
+    "category": "Web Development",
+    "shortDesc": "Premium medical website for a microscopic restorative dentist. Features appointment booking, service showcase, and a luxury clinical aesthetic.",
+    "fullDesc": "Designed and developed for Dr. Hamza Dental Centre. A high-end medical website with elegant gold and neutral tones, full-screen hero with doctor profile, treatment listings, appointment booking CTA, and trust-building contact flows.",
+    "deliverables": ["Medical Website Design", "Appointment Booking UI", "Service Pages", "Premium Visual Identity"],
+    "techStack": ["HTML5", "CSS3", "JavaScript", "WordPress"],
+    "accentColor": "#E50932",
+    "liveUrl": "https://hamzadentalcentre.com/",
+    "thumbnail": "../assets/projects/hamzadental.jpg"
+  },
+  {
+    "id": "youtube-thumbnails",
+    "title": "High-Impact YouTube Thumbnails",
+    "category": "Thumbnail Design",
+    "shortDesc": "Custom thumbnail compositions crafted with bold visual hierarchy, contrast lighting, and color psychology.",
+    "fullDesc": "A curated collection of click-worthy YouTube thumbnails designed to boost impressions and view velocity. Built using Photoshop with hand-tuned subject cutouts, dynamic typography hooks, and high-impact color grading.",
+    "deliverables": ["Subject Cutout & Retouching", "Typography Hierarchy", "Color Psychology & Lighting"],
+    "techStack": ["Adobe Photoshop", "Color Grading", "Visual Composition"],
+    "accentColor": "#E50932",
+    "thumbnail": "../assets/projects/thumbnails.svg"
+  },
+  {
+    "id": "cinematic-video-editing",
+    "title": "Cinematic Video Editing & Post-Production",
+    "category": "Video Editing",
+    "shortDesc": "Paced video storytelling with tight audio design, dynamic jump cuts, motion graphics, and rich color grades.",
+    "fullDesc": "Full post-production suite for short-form and long-form video content. Features seamless b-roll pacing, sound effects, subtitles, and color correction optimized for viewer retention on YouTube, TikTok, and Instagram.",
+    "deliverables": ["Timeline Pacing & Cuts", "Sound Design & Waveform Sync", "Color Correction & Grading"],
+    "techStack": ["Adobe Premiere Pro", "CapCut", "Motion Graphics"],
+    "accentColor": "#E50932",
+    "thumbnail": "../assets/projects/video-editing.svg"
+  }
+]

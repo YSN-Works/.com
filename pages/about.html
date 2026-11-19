@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Yaseen Malik — Web Developer &amp; Creative Editor | YSN Works</title>
+  <meta name="description" content="Learn about Yaseen Malik (YSN Works) — Web developer, thumbnail designer, and video editor based in Pakistan.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="../assets/images/logo.png">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <link rel="stylesheet" href="../css/about.css">
+
+  <!-- CDNs -->
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+  <!-- SVG Liquid Page Transition Layer -->
+  <div class="page-transition-curtain" aria-hidden="true">
+    <svg viewBox="0 0 100 100" preserveAspectRatio="none">
+      <path id="transitionPath" d="M 0 100 V 100 Q 50 100 100 100 V 100 Z" />
+    </svg>
+  </div>
+
+  <div class="cursor-dot"></div>
+  <div class="cursor-follower"></div>
+
+  <!-- Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-wrapper">
+      <nav class="nav-inner">
+        <a href="../index.html" class="nav-brand magnetic-wrap">
+          <img src="../assets/images/logo.png" alt="YSN Works Logo" class="nav-brand-logo">
+          <span class="nav-brand-text">YSN <span>WORKS</span></span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="../index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link active">About</a></li>
+          <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="products.html" class="nav-link">Products</a></li>
+          <li><a href="faq.html" class="nav-link">FAQ</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="theme-toggle magnetic-wrap" aria-label="Toggle Theme"></button>
+          <a href="contact.html" class="btn btn-sm btn-primary magnetic-wrap">Start Project</a>
+          <button class="mobile-toggle" aria-label="Toggle Menu"><span></span><span></span><span></span></button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <ul class="mobile-drawer-links">
+      <li><a href="../index.html" class="mobile-drawer-link">Home</a></li>
+      <li><a href="about.html" class="mobile-drawer-link active">About</a></li>
+      <li><a href="portfolio.html" class="mobile-drawer-link">Portfolio</a></li>
+      <li><a href="services.html" class="mobile-drawer-link">Services</a></li>
+      <li><a href="products.html" class="mobile-drawer-link">Products</a></li>
+      <li><a href="faq.html" class="mobile-drawer-link">FAQ</a></li>
+      <li><a href="contact.html" class="mobile-drawer-link">Contact</a></li>
+    </ul>
+    <div class="mobile-drawer-footer">
+      <span style="color: var(--text-muted); font-size: 0.9rem;">111.limitra.pk@gmail.com</span>
+      <span style="color: var(--accent-crimson); font-size: 0.9rem; font-weight: 600;">WhatsApp: 03079649008</span>
+    </div>
+  </div>
+
+  <main>
+    <!-- About Hero -->
+    <section class="about-hero">
+      <div class="ambient-crimson-glow" style="top: 10%; right: 10%; width: 450px; height: 450px;"></div>
+      <div class="container about-hero-grid">
+        <div>
+          <div class="section-tag">ABOUT ME</div>
+          <h1 class="section-title kinetic-title">Yaseen Malik.</h1>
+          <p class="section-subtitle" style="margin-bottom: 2rem;">
+            I am a web developer and creative editor based in Pakistan. Through YSN Works, I build modern, responsive websites and produce high-impact visual media across thumbnail design and video editing.
+          </p>
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+            <a href="portfolio.html" class="btn btn-primary magnetic-wrap">View Projects</a>
+            <a href="https://wa.me/923079649008" target="_blank" rel="noopener" class="btn btn-outline magnetic-wrap">Chat on WhatsApp</a>
+          </div>
+        </div>
+
+        <div class="about-portrait-wrap tilt-3d clip-reveal-circle">
+          <img src="../assets/images/Dp.png" alt="Yaseen Malik Portrait" class="about-portrait-img">
+        </div>
+      </div>
+    </section>
+
+    <!-- My Background & Story -->
+    <section class="section" style="background: var(--bg-secondary);">
+      <div class="container">
+        <div class="section-tag">THE CRAFT</div>
+        <h2 class="section-title kinetic-title">Bridging Code and Visual Media.</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2.5rem; margin-top: 2rem;">
+          <div>
+            <p style="font-size: 1.05rem; color: var(--text-primary); line-height: 1.75; margin-bottom: 1.25rem;">
+              My focus centers on two interrelated disciplines: building clean, responsive web experiences with modern HTML5, CSS3, JavaScript, and GSAP, and crafting high-retention digital visual content.
+            </p>
+            <p>
+              I believe that website visitors and video viewers judge brands within the first two seconds. Clean typography, fast-loading pages, sharp thumbnail imagery, and engaging video pacing ensure that your message makes an immediate impression.
+            </p>
+          </div>
+          <div>
+            <div class="glass-card" style="padding: 1.75rem; border-color: var(--border-accent);">
+              <h4 style="color: var(--accent-crimson); margin-bottom: 0.5rem;">Creative Focus</h4>
+              <p style="font-size: 0.92rem; color: var(--text-primary);">
+                “Building digital experiences that stand out through clean front-end engineering, high-CTR thumbnail composition, and cinematic video storytelling.”
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Creative Journey -->
+    <section class="section">
+      <div class="container about-journey-container">
+        <div class="section-tag">DISCIPLINE</div>
+        <h2 class="section-title kinetic-title">Core Areas of Expertise.</h2>
+        <p class="section-subtitle" style="margin-bottom: 3rem;">How I approach digital craftsmanship across each creative medium.</p>
+
+        <div class="about-journey-step">
+          <div class="journey-step-tag">01 // WEB DEVELOPMENT</div>
+          <h3>Modern Front-End Engineering</h3>
+          <p>I build clean, semantic, and lightning-fast websites using vanilla HTML5, CSS3, and modern JavaScript. With GSAP ScrollTrigger and Lenis smooth scrolling, every layout feels tactile and fluid across desktop and mobile devices.</p>
+        </div>
+
+        <div class="about-journey-step">
+          <div class="journey-step-tag">02 // THUMBNAIL DESIGN</div>
+          <h3>High-CTR Visual Hooks</h3>
+          <p>Utilizing Adobe Photoshop, I create high-contrast YouTube thumbnails designed to maximize click-through rate. Each thumbnail focuses on clear visual hierarchy, expressive cutouts, strong color theory, and bold typography.</p>
+        </div>
+
+        <div class="about-journey-step">
+          <div class="journey-step-tag">03 // VIDEO EDITING</div>
+          <h3>Paced Video Storytelling</h3>
+          <p>Using Premiere Pro and CapCut, I edit short-form and long-form video content with smooth pacing, audio synchronization, custom motion graphics, and color grading tailored to retain viewer attention.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tools Section with Official Logos -->
+    <section class="section" style="background: var(--bg-secondary);">
+      <div class="container">
+        <div class="section-tag">ARSENAL</div>
+        <h2 class="section-title kinetic-title">Software &amp; Technologies.</h2>
+        <p class="section-subtitle">Real software and tools used across my development and media workflows.</p>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 1.25rem; margin-top: 2.5rem;">
+          <div class="glass-card" style="padding: 1.25rem; display: flex; align-items: center; gap: 0.85rem;">
+            <img src="../assets/icons/html5.svg" alt="HTML5" style="width: 32px; height: 32px;">
+            <span style="font-weight: 600; font-size: 0.95rem;">HTML5</span>
+          </div>
+          <div class="glass-card" style="padding: 1.25rem; display: flex; align-items: center; gap: 0.85rem;">
+            <img src="../assets/icons/css3.svg" alt="CSS3" style="width: 32px; height: 32px;">
+            <span style="font-weight: 600; font-size: 0.95rem;">CSS3</span>
+          </div>
+          <div class="glass-card" style="padding: 1.25rem; display: flex; align-items: center; gap: 0.85rem;">
+            <img src="../assets/icons/javascript.svg" alt="JavaScript" style="width: 32px; height: 32px;">
+            <span style="font-weight: 600; font-size: 0.95rem;">JavaScript</span>
+          </div>
+          <div class="glass-card" style="padding: 1.25rem; display: flex; align-items: center; gap: 0.85rem;">
+            <img src="../assets/icons/gsap.svg" alt="GSAP" style="width: 32px; height: 32px;">
+            <span style="font-weight: 600; font-size: 0.95rem;">GSAP 3</span>
+          </div>
+          <div class="glass-card" style="padding: 1.25rem; display: flex; align-items: center; gap: 0.85rem;">
+            <img src="../assets/icons/figma.svg" alt="Figma" style="width: 32px; height: 32px;">
+            <span style="font-weight: 600; font-size: 0.95rem;">Figma</span>
+          </div>
+          <div class="glass-card" style="padding: 1.25rem; display: flex; align-items: center; gap: 0.85rem;">
+            <img src="../assets/icons/wordpress.svg" alt="WordPress" style="width: 32px; height: 32px;">
+            <span style="font-weight: 600; font-size: 0.95rem;">WordPress</span>
+          </div>
+          <div class="glass-card" style="padding: 1.25rem; display: flex; align-items: center; gap: 0.85rem;">
+            <img src="../assets/icons/photoshop.svg" alt="Photoshop" style="width: 32px; height: 32px;">
+            <span style="font-weight: 600; font-size: 0.95rem;">Photoshop</span>
+          </div>
+          <div class="glass-card" style="padding: 1.25rem; display: flex; align-items: center; gap: 0.85rem;">
+            <img src="../assets/icons/premiere.svg" alt="Premiere Pro" style="width: 32px; height: 32px;">
+            <span style="font-weight: 600; font-size: 0.95rem;">Premiere Pro</span>
+          </div>
+          <div class="glass-card" style="padding: 1.25rem; display: flex; align-items: center; gap: 0.85rem;">
+            <img src="../assets/icons/capcut.svg" alt="CapCut" style="width: 32px; height: 32px;">
+            <span style="font-weight: 600; font-size: 0.95rem;">CapCut</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work Philosophy -->
+    <section class="section">
+      <div class="container">
+        <div class="section-tag">PHILOSOPHY</div>
+        <h2 class="section-title kinetic-title">Guiding Principles.</h2>
+        <div class="philosophy-grid">
+          <div class="philosophy-card">
+            <div class="philosophy-num">01</div>
+            <h4>Performance First</h4>
+            <p>Every website must load fast and scroll smoothly with zero unnecessary bloat or layout shifts.</p>
+          </div>
+          <div class="philosophy-card">
+            <div class="philosophy-num">02</div>
+            <h4>Visual Hierarchy</h4>
+            <p>High contrast and clear typographic scale ensure visitors immediately understand your message.</p>
+          </div>
+          <div class="philosophy-card">
+            <div class="philosophy-num">03</div>
+            <h4>Responsive Craft</h4>
+            <p>Mobile layouts receive equal art direction and care as full-screen desktop viewports.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section">
+      <div class="container">
+        <div class="final-cta-card">
+          <h2 class="final-cta-title kinetic-title">Let's Work Together.</h2>
+          <p class="final-cta-desc">Reach out directly via WhatsApp or email to start your project.</p>
+          <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+            <a href="https://wa.me/923079649008" target="_blank" rel="noopener" class="btn btn-lg btn-primary magnetic-wrap">
+              <span>Message on WhatsApp</span>
+            </a>
+            <a href="contact.html" class="btn btn-lg btn-secondary magnetic-wrap">
+              <span>Submit Form</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© 2026 YSN Works. All rights reserved.</p>
+        <div class="footer-socials">
+          <a href="../index.html" class="footer-link">Home</a>
+          <a href="portfolio.html" class="footer-link">Portfolio</a>
+          <a href="services.html" class="footer-link">Services</a>
+          <a href="contact.html" class="footer-link">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/animations.js"></script>
+  <script src="../js/about.js"></script>
+</body>
+</html>

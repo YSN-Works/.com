@@ -1,0 +1,156 @@
+/* ==========================================================================
+   YSN WORKS — PORTFOLIO PAGE STYLES (portfolio.css)
+   Refined Crimson — Editorial Luxury
+   ========================================================================== */
+
+.portfolio-hero {
+  padding-top: clamp(6.5rem, 13vh, 10rem);
+  padding-bottom: clamp(2.5rem, 5vh, 4rem);
+}
+
+.portfolio-filters {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  flex-wrap: wrap;
+  margin: 2.5rem 0;
+}
+
+.filter-btn {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-full);
+  padding: 0.5rem 1.25rem;
+  font-family: var(--font-heading);
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filter-btn:hover, .filter-btn.active {
+  background: var(--accent-crimson);
+  color: #FFFFFF;
+  border-color: var(--accent-crimson);
+  box-shadow: 0 4px 14px var(--accent-crimson-glow);
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  gap: 2.25rem;
+}
+
+.portfolio-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.35s var(--transition-smooth), border-color 0.35s ease, box-shadow 0.35s ease;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--border-active);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+}
+
+.portfolio-thumb {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background: #0E0E12;
+}
+
+.portfolio-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s var(--transition-smooth);
+}
+
+.portfolio-card:hover .portfolio-thumb img {
+  transform: scale(1.04);
+}
+
+.portfolio-body {
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.portfolio-tags {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.65rem;
+}
+
+.portfolio-cat {
+  font-family: var(--font-heading);
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--accent-crimson);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.portfolio-title {
+  font-size: 1.35rem;
+  margin-bottom: 0.65rem;
+  line-height: 1.3;
+}
+
+.portfolio-desc {
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin-bottom: 1.25rem;
+  flex: 1;
+}
+
+.portfolio-tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 1.5rem;
+}
+
+.tech-tag {
+  font-size: 0.72rem;
+  font-family: var(--font-heading);
+  padding: 0.2rem 0.55rem;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  color: var(--text-muted);
+}
+
+.portfolio-footer {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  flex-wrap: wrap;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-subtle);
+}
+
+@media (max-width: 767px) {
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio-footer {
+    gap: 0.5rem;
+  }
+
+  .portfolio-footer .btn {
+    flex: 1 1 auto;
+    justify-content: center;
+  }
+}

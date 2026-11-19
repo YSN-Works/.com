@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frequently Asked Questions — YSN Works</title>
+  <meta name="description" content="Answers to common questions about working with Yaseen Malik on website development, thumbnail design, and video editing.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="../assets/images/logo.png">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <link rel="stylesheet" href="../css/faq.css">
+
+  <!-- CDNs -->
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+  <!-- SVG Liquid Page Transition Layer -->
+  <div class="page-transition-curtain" aria-hidden="true">
+    <svg viewBox="0 0 100 100" preserveAspectRatio="none">
+      <path id="transitionPath" d="M 0 100 V 100 Q 50 100 100 100 V 100 Z" />
+    </svg>
+  </div>
+
+  <div class="cursor-dot"></div>
+  <div class="cursor-follower"></div>
+
+  <!-- Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-wrapper">
+      <nav class="nav-inner">
+        <a href="../index.html" class="nav-brand magnetic-wrap">
+          <img src="../assets/images/logo.png" alt="YSN Works Logo" class="nav-brand-logo">
+          <span class="nav-brand-text">YSN <span>WORKS</span></span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="../index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="products.html" class="nav-link">Products</a></li>
+          <li><a href="faq.html" class="nav-link active">FAQ</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="theme-toggle magnetic-wrap" aria-label="Toggle Theme"></button>
+          <a href="contact.html" class="btn btn-sm btn-primary magnetic-wrap">Start Project</a>
+          <button class="mobile-toggle" aria-label="Toggle Menu"><span></span><span></span><span></span></button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <ul class="mobile-drawer-links">
+      <li><a href="../index.html" class="mobile-drawer-link">Home</a></li>
+      <li><a href="about.html" class="mobile-drawer-link">About</a></li>
+      <li><a href="portfolio.html" class="mobile-drawer-link">Portfolio</a></li>
+      <li><a href="services.html" class="mobile-drawer-link">Services</a></li>
+      <li><a href="products.html" class="mobile-drawer-link">Products</a></li>
+      <li><a href="faq.html" class="mobile-drawer-link active">FAQ</a></li>
+      <li><a href="contact.html" class="mobile-drawer-link">Contact</a></li>
+    </ul>
+    <div class="mobile-drawer-footer">
+      <span style="color: var(--text-muted); font-size: 0.9rem;">111.limitra.pk@gmail.com</span>
+      <span style="color: var(--accent-crimson); font-size: 0.9rem; font-weight: 600;">WhatsApp: 03079649008</span>
+    </div>
+  </div>
+
+  <main>
+    <section class="faq-hero">
+      <div class="ambient-crimson-glow" style="top: 10%; left: 15%; width: 450px; height: 450px;"></div>
+      <div class="container">
+        <div class="section-tag">KNOWLEDGE BASE</div>
+        <h1 class="section-title kinetic-title">Frequently Asked Questions.</h1>
+        <p class="section-subtitle">
+          Transparent answers regarding project turnaround, collaboration workflow, and payment options.
+        </p>
+
+        <!-- Search -->
+        <div class="faq-search-box">
+          <svg class="faq-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <input type="text" id="faqSearchInput" class="faq-search-input" placeholder="Search keywords like 'pricing', 'whatsapp', 'delivery'..." aria-label="Search FAQ">
+        </div>
+
+        <!-- Category Tabs -->
+        <div class="faq-category-tabs">
+          <button class="faq-tab-btn active" data-category="all">All Topics</button>
+          <button class="faq-tab-btn" data-category="general">General</button>
+          <button class="faq-tab-btn" data-category="web">Web Development</button>
+          <button class="faq-tab-btn" data-category="media">Thumbnails &amp; Video</button>
+          <button class="faq-tab-btn" data-category="billing">Pricing &amp; Payments</button>
+        </div>
+
+        <!-- Group 1: General -->
+        <div class="faq-accordion-group" data-group="general">
+          <h2 class="faq-group-title">General Collaboration</h2>
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Who will I be working with directly?</span>
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                You will collaborate directly with me, Yaseen Malik. I personally handle all website code, thumbnail design, and video editing. There are no middlemen or account managers.
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>How do we communicate throughout the project?</span>
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Communication is fast and flexible through WhatsApp (03079649008) and email (111.limitra.pk@gmail.com). You will receive regular progress updates, preview links, and clear milestone checkpoints.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Group 2: Web Development -->
+        <div class="faq-accordion-group" data-group="web">
+          <h2 class="faq-group-title">Website Development</h2>
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>What technologies do you use to build websites?</span>
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                I primarily use clean HTML5, modern CSS3, vanilla JavaScript (ES6+), and GSAP for animations. This guarantees blistering fast page speeds, zero heavy dependencies, and true 60 FPS scroll performance. I can also build and configure custom WordPress setups.
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Will my website look great on mobile phones?</span>
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Absolutely. Every build is rigorously tested across small and large mobile viewports (320px to 414px), tablets, and high-resolution monitors to ensure zero horizontal overflow and flawless touch interaction.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Group 3: Media -->
+        <div class="faq-accordion-group" data-group="media">
+          <h2 class="faq-group-title">Thumbnails &amp; Video Editing</h2>
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>What is the turnaround time for YouTube thumbnails?</span>
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Standard thumbnail orders are typically completed within 24 to 48 hours. Urgent same-day delivery can also be arranged via WhatsApp.
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>What formats and software do you use for video editing?</span>
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                I work with Adobe Premiere Pro and CapCut, delivering in 1080p, 4K, 16:9 for YouTube, or 9:16 vertical video for TikTok, Instagram Reels, and YouTube Shorts.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Group 4: Billing -->
+        <div class="faq-accordion-group" data-group="billing">
+          <h2 class="faq-group-title">Pricing &amp; Payment Options</h2>
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>What payment methods do you accept?</span>
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                For Pakistani clients, I accept direct Bank Transfer, Raast, Nayapay, and Sadapay. For international clients, payments can be remitted in USD, GBP, EUR, AED, or SAR via international wire or digital transfer.
+              </div>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>How are project payments structured?</span>
+              <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-inner">
+                Web projects typically operate on a standard 50% deposit upon kickoff and 50% upon final delivery and client sign-off.
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FAQ CTA -->
+    <section class="section">
+      <div class="container">
+        <div class="final-cta-card">
+          <h2 class="final-cta-title kinetic-title">Still Have Questions?</h2>
+          <p class="final-cta-desc">Reach out directly via WhatsApp for a quick response.</p>
+          <a href="https://wa.me/923079649008" target="_blank" rel="noopener" class="btn btn-lg btn-primary magnetic-wrap">
+            <span>Message on WhatsApp</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© 2026 YSN Works. All rights reserved.</p>
+        <div class="footer-socials">
+          <a href="../index.html" class="footer-link">Home</a>
+          <a href="about.html" class="footer-link">About</a>
+          <a href="services.html" class="footer-link">Services</a>
+          <a href="contact.html" class="footer-link">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/animations.js"></script>
+  <script src="../js/faq.js"></script>
+</body>
+</html>
